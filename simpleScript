@@ -1,0 +1,32 @@
+var data = {
+	Shirt: [{text: 'Red', value: 'Red'}, {text: 'Orange', value: 'Orange'}],
+    Jeans: [{text: 'Blue', value: 'Blue'}, {text: 'Gray', value: 'Gray'}]
+};
+
+var product = '',
+	color = '',
+	emptySelect = '<option vlaue="n/a">n/a</option>';
+	
+	
+for(i in data) {
+	product += '<option vlaue='+ i +'>'+ i +'</option>';
+}
+
+$('#product').html(emptySelect + product);
+$('#color').html(emptySelect);
+
+
+
+$('#product').on('change', function(e) {
+		setColor(e.target.value);
+});
+
+
+function setColor(prod) {
+	color = emptySelect;
+	data[prod].forEach(function(el) {
+		color += '<option vlaue='+ el.value +'>'+ el.text +'</option>'
+	});
+
+	$('#color').html(color);	
+}
