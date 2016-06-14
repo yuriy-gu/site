@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery - first example</title>
+		<meta charset="utf8"/>
+		<script src="script/jquery.js"></script>
+		<script src="script/script.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>	
+		<div class="wrapperOuther"><div id="drag" class="drag">Drag me</div></div>
+		<br/>
+		<hr/>
+		<form id="test" class="new">
+			<div class="fieldWrap">
+				<input type="text" name="t1" require>	
+				<span class="fieldWrap_msg">The field can not be empty</span>
+			</div>
+			
+			<br>
+			<select name="single">
+				<option>Single</option>
+				<option>Single2</option>
+			</select>
+			<br>
+			<div class="fieldWrap">
+				<input type="text" name="t2" require>
+				<span class="fieldWrap_msg">The field can not be empty</span>
+			</div>
+			<br>
+			<select name="multiple" multiple="multiple">
+				<option selected="selected">Multiple</option>
+				<option>Multiple2</option>
+				<option selected="selected">Multiple3</option>
+			</select>
+
+			<br>
+			<input type="checkbox" name="check" value="check1" require id="ch1">
+			<label for="ch1">check1</label>
+			<input type="checkbox" name="check" value="check2" require id="ch2">
+			<label for="ch2">check2</label>
+
+			<br>
+			<input type="radio" name="radio" value="radio1" checked="checked" id="r1">
+			<label for="r1">radio1</label>
+			<input type="radio" name="radio" value="radio2" id="r2">
+			<label for="r2">radio2</label><br>
+			<input type="button" id="submit" value="submit">
+			<div class="submited">Sended</div>
+		</form>
+		<hr/>	
+		<ul class="level-1">
+		  <li class="item-i">I</li>
+		  <li class="item-ii">II
+		    <ul class="level-2">
+		      <li class="item-a">A</li>
+		      <li class="item-b">B
+		        <ul class="level-3">
+		          <li id="foo" class="item-1">foo</li>
+		          <li id="bar" class="item-2">bar</li>
+		          <li id="baz" class="item-3">baz</li>
+		        </ul>
+		      </li>
+		      <li class="item-c">C</li>
+		    </ul>
+		  </li>
+		  <li class="item-iii">III</li>
+		</ul>
+	</body> 
+</html>

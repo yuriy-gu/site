@@ -1,0 +1,22 @@
+{
+  "name": "asdf",
+  "description": "zc",
+  "main": "cvzxc",
+  "authors": [
+    "'Vasya' <'Vasya@test.ru'>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.2.4"
+  },
+  "dependencies": {}
+}
