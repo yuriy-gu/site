@@ -1,153 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>brain acdaemy</title>
-	<link rel="stylesheet" href="css/main.css" />
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-
 	<header>
 		<div class="container">
 			<div class="row">
-				
-				<div class="col-lg-5 col-md-5 col-sm-5">
-					<img src="img/logo.png" alt="brain academy">
+				<div class="col-lg-6 col-md-5 col-sm-4">
+					<img src="img/logo.png" alt="brain academy" class="img-responsive" />
 				</div>
-				
-				<div class="col-lg-7 col-md-7 col-sm-7">
-					<nav>
-						<ul>
-							<li>
-								<a href="#promo">Promo</a>
-							</li>
-							<li>
-								<a href="#slider">Slider</a>
-							</li>
-							<li>
-								<a href="#catalog">Catalog</a>
-							</li>
-							<li>
-								<a href="#about_us">About Us</a>
-							</li>
-							<li>
-								<a href="#contacts">Contacts</a>
-							</li>
-							<li>
-								<a href="#footer">Footer</a>
-							</li>
-						</ul>
-					</nav>
-				</div> <!-- /col -->
-			</div>	<!-- /row -->
-		</div> <!-- /container -->
+				<ul class="col-lg-6 col-md-7 col-sm-8 nav nav-tabs">
+					<li>
+						<a href="#promo">Promo</a>
+					</li>
+					<li>
+						<a href="#slider">Slider</a>
+					</li>
+					<li>
+						<a href="#catalog">Catalog</a>
+					</li>
+					<li>
+						<a href="#about">About Us</a>
+					</li>
+					<li>
+						<a href="#contacts">Contacts</a>
+					</li>
+					<li>
+						<a href="#footer">Footer</a>
+					</li>
+				</ul>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
 	</header>
 
 
 
-
-
-	<!-- =========== TOP_CONTENT =========== -->
-	<section class="top_content">
+	<!-- ========== TOP_CONTENT ========== -->
+	<section class="top_content" id="promo">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 top_text">
-					<p>
-						lorem ipsum dolor sit amet,
+				<div class="col-lg-6 col-md-5 col-sm-5">
+					<h1>
+						Loremipsum dolor sit amet,
 						<br/>
-						consectetur adipiscing elit.
-					</p>
-					<p>
+						consectur adipiscing elit.
+					</h1>
+					<h2>
 						etiam vel sapein tempor,
 						<br/>
-						suscipit vel, pulvinar dui.
-					</p>
-				</div> <!-- /col top_text -->
-
-				<div class="col-lg-6 col-md-6 col-sm-6">
-					<img src="img/aboutUs_1.png" alt="sports-equipment" width="400" height="190">
-				</div> <!-- /img column -->
-			</div> <!-- /row -->
-		</div> <!-- /container -->
+						suscript vel, pulvinar dui.
+					</h2>
+				</div>
+				<div class="top_img col-lg-6 col-md-7 col-sm-7">
+					<img src="img/aboutUs_1.png" alt="smiling people" width="400" height="200"></div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
 	</section>
-
-
 
 
 
 	<!-- ========== SLIDER ========== -->
 	<div class="slider" id="slider">
 		<div class="container">
-				<div class="slider_text">
-					<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
-					<h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi.
-					</h2>
-					<h2>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi itaque. Lorem ipsum dolor. Lorem ipsum dolor sit amet, consectetur elit. Dolorum minima quasi itaque. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi itaque Lorem ipsum.
-					</h2>
-				</div> <!-- /slider_text-->
+			<div class="slider_text">
+				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+				<h4>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi itaque. Lorem ipsum dolor. Lorem ipsum dolor sit amet, consectetur elit. Dolorum minima quasi itaque. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi itaque Lorem ipsum.
+				</h4>
+			</div>
+			<!-- /slider_text-->
 
-				<div class="slider_img">
-					<a href="#">
-						<img src="img/Spirit XT185.jpeg" alt="alt">
-						<span class="item_name">lorem Ipsum</span>
+			<div class="slider_img row">
+
+				<a href="#" class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-sm-2 col-sm-offset-2">
+					<img src="img/Spirit XT185.jpeg" alt="alt">
+					<span class="item_name">lorem Ipsum</span>
+				</a>
+
+				<a href="#" class="col-lg-2 col-md-2 col-sm-2">
+					<img src="img/USA Style (SS-401).jpeg" alt="alt">
+					<span class="item_name">lorem Ipsum</span>
+				</a>
+
+				<a href="#" class="col-lg-2 col-md-2 col-sm-2">
+					<img src="img/USA Style (SS-1365).jpeg" alt="alt">
+					<span class="item_name">lorem Ipsum</span>
+				</a>
+
+				<a href="#" class="col-lg-2 col-md-2 col-sm-2">
+					<img src="img/FitLogic BF6100.jpeg" alt="alt">
+					<span class="item_name">lorem Ipsum</span>
+				</a>
+
+				<span class="prev glyphicon glyphicon-arrow-left"></span>
+				<span class="next glyphicon glyphicon-arrow-right"></span>
+
+			</div>
+			<!-- /slider_img-->
+
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
 					</a>
-
-					<a href="#">
-						<img src="img/USA Style (SS-401).jpeg" alt="alt">
-						<span class="item_name">lorem Ipsum</span>
+				</li>
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
 					</a>
-
-					<a href="#">
-						<img src="img/USA Style (SS-1365).jpeg" alt="alt">
-						<span class="item_name">lorem Ipsum</span>
-					</a>
-
-					<a href="#">
-						<img src="img/FitLogic BF6100.jpeg" alt="alt">
-						<span class="item_name">lorem Ipsum</span>
-					</a>
-				</div> <!-- /slider_img-->
-
-				<div>
-					<ul class="pagination">
-					 	<li>
-							<a href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-					 		</a>
-						</li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li>
-							<a href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-							</a>
-					    </li>
-					</ul>
-				</div> <!-- /pagination -->
-					<span class="navigation prev glyphicon glyphicon-arrow-left"></span>
-					<span class="navigation next glyphicon glyphicon-arrow-right"></span>
-
-
-		</div> <!-- /container -->
-	</div> <!-- /slider -->
+				</li>
+			</ul>
+			<!-- /pagination -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /slider -->
 
 
 
-
-
-	<!-- CATALOG -->
+	<!-- ========== CATALOG ========== -->
 	<section class="catalog" id="catalog">
 		<div class="container">
 			<div class="row">
-
-				<h2>Catalog</h2>
-				
-				<table class="col-lg-7 col-md-7 col-sm-7">
+				<p class="charter_style">Catalog</p>
+				<table class="col-lg-7 col-md-7 col-sm-7 col-sm-7">
 					<tbody>
 						<tr class="bg_color">
 							<td>Беговая дорожка Spirit XT185</td>
@@ -181,14 +180,11 @@
 						</tr>
 						<tr class="bg_color">
 							<td>Массажный стол (дерев. рама) Relax (HO 1007)</td>
-							<td class=
-							"delete_img">&ndash;</td>
+							<td class="delete_img">&ndash;</td>
 							<td class="add_img">+</td>
 						</tr>
 						<tr>
-							<td>
-								Массажный стол 2-х секционный (алюмин. рама) Relax розовый (HY-2010-1.3)
-							</td>
+							<td>Массажный стол 2-х секционный (алюмин. рама) Relax розовый (HY-2010-1.3)</td>
 							<td class="delete_img">&ndash;</td>
 							<td class="add_img">+</td>
 						</tr>
@@ -204,40 +200,57 @@
 						</tr>
 					</tbody>
 				</table>
-
+				
 				<div class="col-lg-5 col-md-5 col-sm-5">
-					<img src="img/catalog.png" alt="picture" width="500" height="310">
+					<img src="img/catalog.png" alt="picture" width="500" height="325">
 				</div>	<!-- /catalog_img -->
 			</div> <!-- /row -->
-				<div class="catalog_pagination">
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li>
 					<a href="#">1</a>
+				</li>
+				<li>
 					<a href="#">2</a>
+				</li>
+				<li>
 					<a href="#">3</a>
+				</li>
+				<li>
 					<a href="#">4</a>
+				</li>
+				<li>
 					<a href="#">5</a>
-				</div>
-		</div> <!-- /container -->
+				</li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+			<!-- /pagination -->
+		</div> 
+		<!-- /container -->
 	</section>
 
 
 
-
-
-
-	<!-- ABOUT US -->
-	<article>
+	<!-- ========== ABOUT US ========== -->
+	<article id="about">
 		<div class="container">
-			<div class="row">
-				
-				<h2>About Us</h2>
-
+			<div class="row">				
+				<p class="charter_style">About Us</p>
 				<div class="top_article">
 					<img src="img/aboutUs_2.png" alt="picture" width="150" height="120">
-					<p>
+					<h4>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, voluptate nam blanditiis doloribus quod facilis neque quas quis voluptates ut, sint odit provident, harum sit porro quia quaerat a repellat!
 						Deleniti quidem, aliquid enim accusantium, ut dignissimos repellat omnis corporis quis, tempora illum in magnam, eum libero fugit? Perferendis aliquid quisquam laborum repellat nulla! Quibusdam nostrum neque sapiente, in possimus!
 						Magnam eaque quidem fugiat minus voluptas, reiciendis optio, natus soluta laudantium? Nemo, illo! Eaque, nostrum possimus quisquam error nam minima nulla et inventore quis officiis fugiat dolorem esse fuga recusandae quidem, aliquid enim accusantium sint odit provident, harum sit. reiciendis optio, natus soluta laudantium uta laudantium? Nemo, illo! Eaque, nostrum possim?
-					</p>
+					</h4>
 				</div>
 				<!-- /top_context -->
 
@@ -247,17 +260,18 @@
 						<div class="small_img">
 							<img src="img/footbal.png" alt="alot" width="50" height="50">
 							<img src="img/hockey.png" alt="alot" width="50" height="50">
-							<img src="img/sliderImg5.png" alt="alot" width="50" height="50"></div>
+							<img src="img/sliderImg5.png" alt="alot" width="50" height="50">
+						</div>
 						<!-- /small_img -->
 					</div>
 					<!-- /bottom_article_img-->
-					<p>
+					<h4>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores nostrum ab deleniti iusto est atque voluptatem a facere, exercitationem aliquid soluta error totam! Voluptatibus dignissimos animi labore sit magni.
 						Iste saepe debitis tempore, quae beatae cum labore magni explicabo quo eligendi praesentium iure accusamus provident odit enim quasi placeat, eos modi ut! Sed recusandae molestiae doloremque, impedit officia sit.
 						Perferendis aspernatur enim facere et temporibus, cum voluptatibus. Voluptatibus labore, asperiores! Iusto, illo temporibus perspiciatis nostrum. Accusantium ut corporis, ducimus rerum unde aliquid voluptatem, ad cum est, aspernatur numquam nobis.
 						Inventore odit, dolorum assumenda accusamus ipsa quo exercitationem nesciunt reiciendis enim non quam magnam placeat aliquam molestias in laboriosam illum ex explicabo harum eligendi? Doloribus quasi magni praesentium nulla dolor.
 						Soluta ad cum consequuntur corporis aspernatur suscipit, et numquam, quae ipsa maxime dignissimos dolor a, quos error! Itaque quo minima sed, hic at voluptatum necessitatibus illo quam sapiente laboriosam. Ullam!
-					</p>
+					</h4>
 				</div> <!-- /bottom_article-->
 
 			</div> <!-- /row -->
@@ -266,17 +280,12 @@
 
 
 
-
-
-
-	<!-- CONTACTS -->
-	<section class="contacts">
+	<!-- ========== CONTACT FORM ========== -->
+	<section class="contacts" id="contacts">
 		<div class="container">
-			<div class="contact_form row">
-				
-				<div class="col-lg-6 col-md-6 col-sm-6">
-				<form action="#" method="post">
-				<h2>ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
+			<div class="row">
+				<p class="charter_style">ФОРМА ОБРАТНОЙ СВЯЗИ</p>
+				<form action="#" method="post" class="col-lg-6 col-md-6 col-sm-6">
 					<div>
 						<label for="name">ВАШЕ ИМЯ:</label>
 						<input type="name" id="name" placeholder="Ваше имя" autocomplete="off" />
@@ -285,7 +294,7 @@
 						<label for="email">ВАШ E-MAIL:</label>
 						<input type="email" id="email" placeholder="Ваш e-mail" autocomplete="off" />
 					</div>
-					<h3>ВЫБЕРИТЕ ТЕМУ ДЛЯ ПИСЬМА И НАПИШИТЕ СООБЩЕНИЕ</h3>
+					<h5>ВЫБЕРИТЕ ТЕМУ ДЛЯ ПИСЬМА И НАПИШИТЕ СООБЩЕНИЕ</h5>
 					<div>
 						<label for="theme">ТЕМА ПИСЬМА</label>
 						<select id="theme">
@@ -300,7 +309,7 @@
 						<label for="message">СООБЩЕНИЕ</label>
 						<textarea name="" id="message"></textarea>
 					</div>
-					<h3>ВВЕДИТЕ КАПЧУ И НАЖМИТЕ "ОТПРАВИТЬ"</h3>
+					<h5>ВВЕДИТЕ КАПЧУ И НАЖМИТЕ "ОТПРАВИТЬ"</h5>
 					<div>
 						<label>9 + 18 =</label>
 						<input type="text" />
@@ -310,136 +319,71 @@
 						<input type="reset" value="Очистить" />
 					</div>
 				</form>
-			</div> <!-- /col -->
 
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<img src="img/aboutUs_3.png" alt="alt" width="350" height="350">
-			</div> <!-- /col -->
-
-			</div> <!-- /row -->
-		</div> <!-- /container -->
-	</section> <!-- /contacts -->
-
-
-
-
-
-
-	<!-- FOOTER -->
-	<footer>
-		<div class="wrapper">
-
-			<div class="boxes social ">
-				<p>Мы в соц.сетях</p>
-				<ul>
-					<li>
-						<a href="#" class="fb-icon"></a>
-					</li>
-					<li>
-						<a href="#" class="rss-icon"></a>
-					</li>
-					<li>
-						<a href="#" class="tw-icon"></a>
-					</li>
-					<li>
-						<a href="#" class="utube-icon"></a>
-					</li>
-					<li>
-						<a href="#" class="vk-icon"></a>
-					</li>
-				</ul>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<img src="img/aboutUs_3.png" alt="alt" width="350" height="350">
+				</div>
 			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</section>
 
-			<div class="boxes footer_nav">
-				<ul>
-					<li>
-						<a href="#promo">Promo</a>
-					</li>
-					<li>
-						<a href="#slider">Slider</a>
-					</li>
-					<li>
-						<a href="#catalog">Catalog</a>
-					</li>
-					<li>
-						<a href="#about_us">About Us</a>
-					</li>
-					<li>
-						<a href="#contacts">Contacts</a>
-					</li>
-					<li>
-						<a href="#footer">Footer</a>
-					</li>
-				</ul>
-			</div><!-- /boxes footer_nav -->
 
-			<div class="footer_bttm">
+
+	<!-- ========== FOOTER ========== -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="social col-lg-5 col-md-5 col-sm-5">
+					<p>Мы в соц.сетях</p>
+					<ul>
+						<li>
+							<a href="#" class="fb-icon"></a>
+						</li>
+						<li>
+							<a href="#" class="rss-icon"></a>
+						</li>
+						<li>
+							<a href="#" class="tw-icon"></a>
+						</li>
+						<li>
+							<a href="#" class="utube-icon"></a>
+						</li>
+						<li>
+							<a href="#" class="vk-icon"></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer_nav col-lg-7 col-md-7 col-sm-7">
+					<ul>
+						<li>
+							<a href="#promo">Promo</a>
+						</li>
+						<li>
+							<a href="#slider">Slider</a>
+						</li>
+						<li>
+							<a href="#catalog">Catalog</a>
+						</li>
+						<li>
+							<a href="#about">About Us</a>
+						</li>
+						<li>
+							<a href="#contacts">Contacts</a>
+						</li>
+						<li>
+							<a href="#footer">Footer</a>
+						</li>
+					</ul>
+				</div><!-- /boxes footer_nav -->
+			</div><!-- /row -->
+
+			<div class="footer_bttm row">
 				<p>All rights reserved</p>
-			</div><!-- =============== /footer_bttm =============== -->
-		</div><!-- /wrapper -->
+			</div>
+		</div><!-- /container -->
 	</footer>
-
-
-
-
-
-
-	<!-- =============== ADMIN_PANEL =============== -->
-
-	<div class="admin_panel">
-		<p>ADMIN PANEL</p>
-		<div class="admin_content">
-			<form action="">
-				<fieldset>
-					<legend>ВРЕМЯ ДИСКОНТА</legend>
-					<input type="nuber" placeholder="число">
-					<input type="nuber" placeholder="месяц">
-					<input type="nuber" placeholder="год">
-					<p><input type="button" value="submit"></p>
-				</fieldset>
-			</form>
-		</div><!-- /admin_content -->
-	</div><!-- /admin_panel -->
-	
-
-
-
-
-
-
-	<!-- =============== OVERLAY (product info)=============== -->
-
-<div class="overlay">
-	<dialog>
-	<div class="product_description">
-		<img src="img/sliderImg6.png" alt="alt"  width="170px" height="120">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab dignissimos, ullam. Reiciendis iure quisquam hic quis, numquam nisi. Deserunt, iusto nostrum est totam molestiae vitae ullam reiciendis nulla dolores! Modi quam, sunt eaque suscipit, nam id, itaque error molestias fugiat ipsa saepe, molestiae exercitationem. Molestiae unde vero repudiandae, sunt. Eligendi eos earum, sed eveniet fugiat architecto quae illum quisquam.</p>
-	</div><!-- product_description -->
-	<div class="clearfix"></div>
-	<form action="#">
-		<label for="checkbox">lorem</label>
-		<input type="radio">
-		<input type="radio">
-		<input type="radio">
-		<input type="button" value="price">
-	</form>
-	
-	<div class="timer">
-		<span class="box">1</span>
-		<span class="box">7</span>
-		<span class="box q">:</span>
-		<span class="box">3</span>
-		<span class="box">0</span>
-		<span class="box q">:</span>
-		<span class="box">0</span>
-		<span class="box">0</span>
-	</div>
-
-	</dialog>
-</div><!-- /overlay -->
-
-
-
-
 </body>
 </html>
