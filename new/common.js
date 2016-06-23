@@ -111,7 +111,7 @@
 // let arr = Object.assign(objTarget, { val: { age: 5 }});
 // console.log(arr);
 //=========================================================
-let o1 = Object.is('foo', 'foo');
-console.log(o1);// true
-let o2 = Object.is({number:1}, {number:1});
-console.log(o2);//false
+// let o1 = Object.is('foo', 'foo');
+// console.log(o1);// true
+// let o2 = Object.is({number:1}, {number:1});
+// console.log(o2);//false

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>lessons</title>
+  <link rel="stylesheet" href="main.css"></head>
+  <style>
+   .word { font-size: 2em; }
+   wbr { display: inline-block; }
+  </style>
+<body>
+  <div class="block"> <b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam minus praesentium ad deleniti, delectus, quod nemo corporis officia cupiditate, porro, pariatur. Enim ducimus recusandae ad neque mollitia dicta, esse aliquam.</b> 
+  </div>
+
+  <br>
+  <hr>
+  <div class="slider">
+    <div class="slider_text">
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi .
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi itaque. Lorem ipsum dolor.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur elit. Dolorum minima quasi itaque. Lorem ipsum.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum minima quasi itaque Lorem ipsum.
+      </p>
+      <hr></div>
+    <div class="slider_img">
+      <a href="#" class="item">
+        <img src="../img/sport.jpg" alt="alt">
+        <span class="item_name">lorem Ipsum</span>
+      </a>
+    </div>
+    <div class="slider_img">
+      <a href="#">
+        <img src="../img/sliderImg2.png" alt="alt">
+        <span class="item_name">lorem Ipsum</span>
+      </a>
+    </div>
+    <div class="slider_img">
+      <a href="#">
+        <img src="../img/sliderImg6.png" alt="alt" id="opacity">
+        <span span class="item_name">lorem Ipsum</span>
+      </a>
+    </div>
+    <div class="slider_img">
+      <a href="#">
+        <img src="../img/sliderImg4.png" alt="alt">
+        <span span class="item_name">lorem Ipsum</span>
+      </a>
+    </div>
+  </div>
+
+  <ul>
+    <li id="q">
+      <img src="" alt="alt">
+      <ul class="hidden" id="list">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+    </li>
+    <li>
+      <img src="" alt="alt">
+      <ul class="hidden">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+    </li>
+    <li>
+      <img src="" alt="alt">
+      <ul class="hidden">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+    </li>
+    <li>
+      <img src="" alt="alt">
+      <ul class="hidden">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+    </li>
+  </ul>
+
+<!-- html5 elements -->
+  <!-- <header>...</header> -->
+  <!-- <nav></nav> -->
+  <!-- <main></main> main content -->
+  <!-- <aside></aside> -->
+  <!-- <menu></menu> выступает в роли контейнера для создания меню -->
+  <!-- <section></section> -->
+  <!-- <article></article> задаёт содержание сайта вроде новости, статьи, записи блога, форума -->
+  <!-- <footer></footer> -->
+  <!-- figcaption - описание -->
+<!-- figure - img -->
+
+<input list="character" />
+<datalist id="character">
+  <option value="One"></option>
+  <option value="Two"></option>
+  <option value="Three"></option>
+</datalist>
+<!-- создает подсказки в текстовом поле. т.е. при наборе о - выдаст One -->
+
+<details> <!-- block element -->
+  <summary>Some datails text</summary>
+  <p>Hidden information</p>
+</details>
+
+<mark>some text</mark><!-- inline element -->
+
+<p>Температура воды</p>
+  <meter value="0" max="100" low="10" high="60">Низкая</meter>
+  <meter value="30" max="100" low="10" high="60">Нормальная</meter>
+  <meter value="80" max="100" low="10" high="60">Горячая</meter>
+  <meter value="100" max="100">Кипяток</meter>
+<!-- Атрибуты
+value - Устанавливает значение. 
+min - Задаёт минимально возможное значение.
+max - Задаёт максимально возможное значение.
+low - Определяет предел, при достижении которого значение считается низким.
+high - Определяет предел, при достижении которого значение считается высоким.
+optimum - Определяет наилучшее или оптимальное значение.
+inline-block element -->
+
+<p>Пожалуйста, подождите, фотографии загружаются.</p>
+  <progress max="100" value="25">
+    Загружено на <span id="value">25</span>%
+  </progress>
+<!-- Используется для отображения прогресса завершённости задачи. Изменение значения происходит через JavaScript. Вид элемента зависит от браузера и операционной системы и может довольно сильно различаться между собой. -->
+<br><br>
+<time>2015-10-02</time>
+
+<p>Самое длинное слово из химии</p>
+  <p class="word">метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>
+  <!-- Элемент <wbr> указывает браузеру место, где допускается делать перенос строки в тексте, если этого требует ширина родительского элемента. -->
+
+<input type="color"><br>
+<input type="date">
+  <p>Опубликовано:<time datetime="2016-04-12T08:23:11+07:00">сегодня;</time>time datetime="2016-04-12T08:23:11+07:00"/time</p>
+<input type="datetime-local">datetime-local<br>
+<input type="email">email<br>
+<input type="month">month<br>
+<input type="range">range<br>
+<input type="search">search<br>
+<input type="number"step="5">number(шаг равен 5)<br>
+<input type="tel">tel<br>
+<input type="time">time<br>
+<input type="url">url<br>
+<input type="week">week<br>
+<form action="">
+  <input type="tel" pattern="/\d+/">
+  <input type="submit" value="Отправить">pattern регулярка для tel
+</form>
+<input type="number" min="10" max="50">from 10 to 50 <br>
+<select multiple size="4">
+  <option>one</option>
+  <option value="">two</option>
+  <option value="">three</option>
+  <option value="">four</option>
+</select>
+<form action="">
+  <input name="user" required onvalid="123" placeholder="Ваше имя"> required
+</form>
+<!-- После того, как обработчик формы получает данные, он возвращает результат в виде HTML-документа. Вы можете определить окно, в которое будет загружаться итоговая веб-страница. Для этого используется атрибут target, в качестве его значения указывается имя окна или фрейма. Если target не установлен, возвращаемый результат показывается в текущем окне.
+Синтаксис:        <form target="имя окна">...</form>
+Значения:
+В качестве значения используется имя окна или фрейма, заданное атрибутом name. Если установлено несуществующее имя, то будет открыто новое окно. В качестве зарезервированных имён можно указывать следующие.
+_blank - Загружает страницу в новое окно браузера.
+_self - Загружает страницу в текущее окно.
+_parent - Загружает страницу во фрейм-родитель, если фреймов нет, то это значение работает как _self.
+_top - Отменяет все фреймы и загружает страницу в полном окне браузера, если фреймов нет, то это значение работает как _self.
+Значение по умолчанию - _self -->
+<video src="../video/flyboard.mp4" controls width="500" height="300"></video>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4">
+</svg>
+<abbr title="World Wide Web Consortium">W3C</abbr> - World Wide Web Consortium(abbr)
+
+<figure>
+  <p><img src="../img/basketball.png" alt=""></p>
+  <figcaption>basketball</figcaption>
+</figure>
+
+<ins>Предназначен для выделения текста, который был добавлен в новую версию документа</ins>
+
+<p><q>Цитата</q></p>
+<p></p>
+
+<!-- Представляет собой диалоговое окно, в котором можно выводить сообщение или форму, например, для входа на сайт.
+Диалоговое окно отображается со следующим предустановленным стилем.
+position: absolute;
+left: 0;
+right: 0;
+margin: auto;
+border: solid;
+padding: 1em;
+background: white;
+color: black;
+Таким образом диалоговое окно отображается с белым фоном, чёрной рамкой и по центру горизонтальной оси. Ширина совпадает с шириной родительского контейнера.
+Для отображения и сокрытия диалогового окна применяются, соответственно, методы show() и hide(), как показано в примере ниже. Кроме того, диалог можно превратить в модальное окно, используя вместо show() метод showModal(). В этом случае остальные элементы на странице блокируются — текст нельзя выделить, а кнопки нажать до тех пор, пока диалоговое окно не будет закрыто. Также модальное окно можно закрыть клавишей Esc.
+Синтаксис
+<dialog open>
+...
+</dialog>
+Закрывающий тег Обязателен.
+Атрибуты open
+Отображает диалоговое окно. Без этого атрибута в стилях к нему добавляется display: none и окно не выводится в браузере.
+ -->
+</body>
+</html>

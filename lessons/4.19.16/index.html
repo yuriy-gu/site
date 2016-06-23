@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Selectors</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+    span[lang] {
+      font-weight:bold;
+    }
+    span[lang="pt"] {
+      color:green;
+    }
+    span[lang~="df"] { /* ~ ищет все df в спанах, в которых df идут через пробел (много значений) */
+      color:red;
+    }
+    span[lang|="zh"] { /* ~ ищет все zh в спанах, в которых после zh идет тире (3-4спаны) */
+      color:pink;
+    }
+    a[href^="#"] { /* ^ означает - начинается с (в данном случае #) */
+      color: yellow;
+    }
+    a[href$=".cn"] { /* в конце строки (поиск с конца)*/
+      color: aqua;
+    }
+    a[href*="example"] { /* обратимся к ссылке которая будет содержать слово example*/
+      color: brown;
+    }
+    .content-box {
+      box-sizing: content-box;
+      padding: 10px;
+      border: 5px solid grey;
+      width: 500px;
+      /* ширина будет 500px*/
+    }
+    .border-box {
+      box-sizing: border-box;
+      padding: 10px;
+      border: 5px solid grey;
+      width: 500px;
+      /* ширина будет 470px*/
+    }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="hello-example">
+      <a href="http://example.com">English:</a>
+      <span lang="en-us en-gb en-au en-nz df">Hello World!</span>
+    </div>
+    <div class="hello-example">
+      <a href="#portuguese">Portuguese:</a>
+      <span lang="pt">Olá Mnd!</span>
+    </div>
+    <div class="hello-example">
+      <a href="http://example.cn">Chinese (Simplified):</a>
+      <span lang="zh-CN">世界您好！</span>
+    </div>
+    <div class="hello-example">
+      <a href="http://example.cn">Chinese (Traditional):</a>
+      <span lang="zh-TW">世界您好！</span>
+    </div>
+
+    <div class="content-box">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit amet iste veritatis nihil ex explicabo, a sunt odit nostrum, modi quis ipsum, et sit commodi, reiciendis labore qui architecto.
+    </div>
+
+    <div class="border-box">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae velit amet iste veritatis nihil ex explicabo, a sunt odit nostrum, modi quis ipsum, et sit commodi, reiciendis labore qui architecto.
+    </div>
+
+
+
+    <div class="row">
+      <div class="grd-step-column5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptas iure, nam placeat amet libero quisquam expedita molestiae, reiciendis officia quasi cumque quas consectetur tempora neque sequi obcaecati dolorem accusantium!</div>
+      <div class="grd-step-column5"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam non architecto incidunt aperiam, quos totam veritatis molestiae consectetur, nihil doloribus necessitatibus minima corporis labore veniam, atque ipsum nisi ab cumque.</div>
+      <div>Illum rerum quo, nulla odio tenetur ex numquam hic, suscipit officiis rem commodi aspernatur alias tempora facere id quaerat beatae voluptas, delectus quas. Ut nam dolor ducimus, iste quisquam voluptatem!</div></div>
+      <div class="grd-step-column6">grd-step-column6</div>
+    </div> -->
+
+
+<div class="row">
+  <aside class="grd-step-column4">
+    <ul>
+      <li>sidebar</li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li>sidebar</li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+      <li><a href="#">link</a></li>
+    </ul>
+  </aside>
+
+  <div class="grd-step-column12">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum tempora fugit earum, fuga ipsam! Reprehenderit, nostrum aliquid, modi porro dignissimos doloribus nemo eveniet autem, vitae id eum nulla rem.</h1>
+      <div class="grd-step-column5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quos assumenda eveniet autem nulla, maiores, harum, iste hic possimus minus reprehenderit ducimus minima inventore veritatis sed commodi illum! Tempora, repellendus.</div>
+      <div class="grd-step-column5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quaerat exercitationem laboriosam dicta quidem ratione sint enim obcaecati. Ut maiores doloribus recusandae quod rerum quos et pariatur assumenda suscipit quis.</div>
+      <div class="grd-step-column5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem deleniti magnam repellat tempore eaque modi. Voluptate molestiae accusamus animi nam deleniti consequatur repellat sit, tenetur quo voluptates harum! Maxime, voluptate!</div>
+
+    <div class="row">
+      <div class="grd-step-column4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam obcaecati similique soluta veniam quia qui hic, laborum magnam minima fugit debitis quidem fuga doloribus pariatur numquam asperiores blanditiis sint omnis!</div>
+      <div class="grd-step-column4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolorum, id nesciunt veniam repellat possimus dignissimos nemo vitae? Iste quam saepe, quod dolore fugiat facilis, natus eum ea aliquid amet.</div>
+      <div class="grd-step-column4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nostrum temporibus perspiciatis harum totam quae, doloremque enim quos, placeat recusandae id odio. Ex quam eum ratione animi quae, beatae veniam.</div>
+      <div class="grd-step-column4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga repudiandae quos provident odio aspernatur, nihil cum obcaecati nulla, numquam, reiciendis alias. Obcaecati odit perspiciatis, enim facere temporibus illum. Nesciunt, eligendi.</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,192 @@
+// $color: mix(#7F8BFF, #b32600, 70%); //mix - мешает цвета
+// $color1: mix(#f83548, #fff, 80%);
+
+// //fade-out  - делает кнопку полупрозрачной
+// .cancel {
+// 	background: fade-out($color,.3); 
+// 	color: #fff;
+// 	border: none;
+// 	border-right: 15px;
+// 	padding: 10px 15px;
+// }
+
+// //fade in  - отменяет прозрачность
+// .save {
+// 	@extend .cancel;
+// 	background: fade-in($color,.8); //rgba(127, 139, 255, 0.8);
+// }
+// .mix {
+// 	background: $color1;
+// }
+
+// /*p {
+// 	width: (1em + 2em)*3;
+// }*/
+
+// // FUNCTION
+// /* к примеру у нас есть сайт шириной в 1200px, и расстояние между колонками 10px,
+//  мы используем 12колоночную систему, получим 1200-10*11 = 1090, соответсвенно 1090/12 и получаем
+// $grid-width: 90,83333333px; для системы колонок по типу bootstrapa  
+// $grid-width: 40px;
+// $gutter-width: 10px;
+
+// @function grid-width($n) {
+// 	@return $n * $grid-width + ($n - 1) * $gutter-width;// сделали функцию и в css получили aside{width:240px}
+// }
+
+// aside { 
+// 	width: grid-width(5); 
+// 	border: 1px solid red;
+// 	margin-top: 15px;
+// }*/
+
+// // mixin || примесь
+
+// @mixin large-text {//создали mixin с имнем large-text
+// 	font:{
+// 		family: Arail;
+// 		size: 1em;
+// 		weight: bold;
+// 	}
+// 	color: #ff0000;
+// }
+// @mixin blue-border($color, $width) {
+// 	border: {
+// 		color: $color;
+// 		width: $width;
+// 		style: dotted;
+// 	}
+// }
+// @mixin blue-border($color, $width: 1px){
+// 	border:{
+// 		color:$color;
+// 		width:$width;
+// 		style:dashed;
+// 	}
+// }
+
+// $values: #ff0000, #00ff00, #0000ff; // создали переменную с тремя значениями
+// @mixin colors($text, $background, $border) {
+// 	color: $text;
+// 	background-color: $background;
+// 	border-color: $border;
+// }
+
+//  h1 {
+// 	@include large-text;// подключили mixin с имнем large-text
+// 	@include blue-border(blue, 1px);
+// 	@include blue-border(red, 5px);// берет последнее значение
+// 	@include colors($values...);// обязательно указать три точки (зарезервированная переменная)
+// }
+
+// p {
+// 	//border: 1px solid black;
+// 	@if 1 + 2 == 3 { border: 1px solid; }
+// 	@if 4 < 3 { color: red; }
+// 	@if null { padding: 5px; }
+// }
+
+// //if
+// $type: save;
+// .button {
+// 	@if $type == cancel {
+// 		color: blue;
+// 	} @else if $type == save {
+// 		color: green;
+// 	} @else if $type == delete {
+// 		color: red;
+// 	} @else {
+// 		color: black;
+// 	}
+// }
+
+// //Цикл for
+// //объвили цикл for для переменной i которая будет от 1 до 3 
+// @for $i from 1 through 3 { // класс задавать обязательно с -1 до 3, типа item-3
+// 	.item-#{$i} {
+// 		width: 2em * $i;
+// 	}
+// }// будет .item-1 {width: 100px;} .item-2 {width: 100px;} .item-2 {width: 100px;}
+
+// .item-1 {
+// 	background: red;
+// 	height: 20px;
+// }
+// .item-2 {
+// 	background: yellow;
+// 	height: 20px;
+// }
+
+// //@while от 6 до 0 с шагом 2
+// $i: 6;
+// @while $i > 0 {
+// 	.item-#{$i} { width: 2em * $i; }
+// 	$i: $i - 2;
+// }
+
+//@each
+// @each $week in monday, tuesday, wednesday, thursday {
+// 	.#{$week}-icon {
+// 		background-image: url('../img/#{week}.png');
+// 	}
+// }
+/* in css it will be:
+.monday-icon {
+	background-image: url('/img/monday.png');
+}
+.tuesday-icon {
+	background-image: url('/img/tuesday.png');
+}
+.wednesday-icon {
+	background-image: url('/img/wednesday.png');
+}
+.thursday-icon {
+	background-image: url('/img/thursday.png');
+}*/
+$i: 0;//объявили переменную равную 0
+@each $sprite in gray, yellow, red, green, blue { 
+	.#{$sprite}-icon {
+		background: url(../img/sprite.png) #{$i}px 0px no-repeat;
+/*обращаемся к нашему img и т.к. нам надо сдвинуть по х, вместо 0 подставляем нашу переменную*/
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+	}
+	$i: $i - 16; //т.к. х=16(width=16) мы сдвигаем i по х на 16px
+}
+/**/
+
+// $color: red;
+// $red: red;
+// $yellow: yellow;
+// $green: green;
+// $blue: blue;
+
+// .menu li {
+// 	color: $blue;
+// }
+// .return {
+// 	background: lighten($red, 30%);
+// 	color: $red;
+// 	padding: 10px;
+// 	border: 1px solid grey;
+// 	border-radius: 5px;
+// 	box-shadow: inset 1px 2px 5px rgba(1,1,1,1.5);
+// 	width: 70px;
+	
+// 	&:hover {
+// 		background-color: blue;
+// 	}
+// }
+// .cancel {
+// 	background: darken($yellow, 10%);
+// 	color: $yellow;
+	
+// 	@extend .return;
+// }
+// .save {
+// 	background: darken($green, 10%);
+// 	color: $green;
+	
+// 	@extend .return;
+// }

@@ -1,0 +1,234 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  text-decoration: none;
+  color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+html, body {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+b, strong {
+  font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+li {
+  display: list-item; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+th, td, caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+q:before, q:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+sub, sup, small {
+  font-size: 75%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+sub {
+  bottom: -0.25em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+sup {
+  top: -0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/_reset\.scss}line{font-family:\000031}}
+svg {
+  overflow: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\000038}}
+.wrapper {
+  margin: 0 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000313}}
+body {
+  background: #fff;
+  font-size: 100%;
+  font-family: Tahoma, sans-serif; }
+
+/* =============== header =============== */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000322}}
+header {
+  background: #181818; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000325}}
+  header nav {
+    float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000329}}
+  header ul li {
+    color: #6E6E6E;
+    display: inline-flex; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000334}}
+  header a {
+    color: #6E6E6E;
+    padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000338}}
+    header a:hover {
+      background: #000;
+      color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000344}}
+  header form,
+  header label,
+  header input {
+    color: #6E6E6E; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000350}}
+  header form {
+    float: right;
+    padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000354}}
+    header form input {
+      background: #181818;
+      border: none;
+      width: 80px; }
+
+/* /header*/
+/* =============== main =============== */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000365}}
+.main {
+  margin-top: 20px; }
+
+/* ===== aside ===== */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000370}}
+aside {
+  background: #EEEEEE;
+  float: left;
+  margin-right: 20px;
+  width: 13.344%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000376}}
+  aside p {
+    color: #6E6E6E;
+    font-size: 0.9em;
+    padding: 10px 0 10px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000382}}
+  aside a {
+    color: #1589C9;
+    display: block;
+    font-size: 0.8em;
+    padding: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000388}}
+    aside a:hover {
+      background: #1589C9;
+      color: #fff; }
+
+/* /aside */
+/* ===== top_article ===== */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\0000398}}
+section {
+  float: right;
+  width: 83%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003102}}
+.top_article {
+  background: #EEEEEE;
+  padding: 70px 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003106}}
+  .top_article h1 {
+    font-size: 3rem;
+    color: #2e2e2e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003111}}
+  .top_article h2 {
+    color: #2e2e2e;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003118}}
+  .top_article a {
+    background-color: #106AC9;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003127}}
+    .top_article a:hover {
+      background-color: #1276e1; }
+
+/* /top_article */
+/* ===== column_article ===== */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003134}}
+.column_article {
+  float: left;
+  margin-right: 10px;
+  text-align: justify;
+  width: 32.75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003140}}
+  .column_article h3 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+    color: #2e2e2e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003147}}
+  .column_article h4 {
+    font-size: 0.8em;
+    color: #2e2e2e; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003152}}
+  .column_article a {
+    background: #FAFAFA;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    box-shadow: 1px 2px 1px rgba(1, 1, 1, 0.5);
+    display: block;
+    font-size: 0.8em;
+    margin-top: 10px;
+    padding: 10px;
+    width: 90px;
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003164}}
+    .column_article a:hover {
+      background: #d4d4d4;
+      border: 1px solid #d4d4d4;
+      border-radius: 4px;
+      box-shadow: 1px 2px 1px rgba(1, 1, 1, 0.5); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003172}}
+  .column_article sub {
+    position: absolute;
+    top: 50%;
+    right: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003179}}
+.column_article:last-child {
+  margin-right: -100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/student\/Desktop\/brain-acad\/lessons\/sass\%20example\/sass\/main\.scss}line{font-family:\00003185}}
+.clearfix {
+  clear: both; }

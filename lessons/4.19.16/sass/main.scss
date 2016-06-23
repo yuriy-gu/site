@@ -1,0 +1,38 @@
+// 1ый вид сетки
+// $base-columns-amount: 16;
+// @for $i from 1 through $base-columns-amount { /* задали диапазон от 1 до 16*/
+// 	$minimum-column-width: 100%/$i; /* 100/i (которое равно от 1 до 16)*/
+// 	grd-fill-column#{$i} { /*название колонки от 1 до 16*/
+// 		width: $minimum-column-width; /* к ширине добавили 100/i* и так до 16 1я-100%, 2я- 50%, 3я-33% 4я-25% и т.д.*/
+// 	}
+// }
+
+
+//стандартный вид сетки
+$base-columns-amount: 16; /* 12 */
+@for $i from 1 through $base-columns-amount { /* задали диапазон от 1 до 16*/
+	$minimum-column-width: 100% / $base-columns-amount; /* 100/i (которое равно от 1 до 16)*/
+	.grd-step-column#{$i} { /*название колонки от 1 до 16*/
+		width: $minimum-column-width * $i; /* к ширине добавили 100/i* и так до 16 1я-100%, 2я- 93,75%, 3я-87,5% 4я-81,125% и т.д. (от 100 отнимаем 6,25, от след знач - 6,25 и т.д)*/
+	}
+}
+
+ .row {
+ 	font-size: 0; /* дефолтное поведение браузера, надо что-бы убрать отступы между блоками*/
+ 	background: green; /* вешаем для блоков одиноковой высоты*/
+ 	[class*="grd-step-column"],
+ 	[class*="grd-fill-column"] {
+ 		display: inline-block; /* либо задать display: table-cell*/
+ 		vertical-align: top;
+ 		font-size: 14px;
+ 		padding: 0 5px;
+ 		box-sizing: border-box;
+ 	}
+ }
+ 
+ /* html height:100%
+ body height:100%
+ во враппер ложим header and content
+ footer ложим в body и margin-top -...px*/
+
+

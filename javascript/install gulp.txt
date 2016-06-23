@@ -1,0 +1,10 @@
+INSTALLATION OF GULP
+http://www.creative-seo.ru/blog/gulp-dlya-nachinayushchih/ описание установки gulp
+https://nodejs.org/en/ - install v4.4.4 LTS
+что бы проверить стал он или нет win+r, затем cmd, node -v
++npm (идет в комплекте с node.js)
+in cmd we should write: npm install gulp -g    (-g глобально)
+затем через cmd заходим в папку с gulp: cd адресс папки
+them write: npm init, next we shuold write some name (test). in our folder we should see file package.json
+npm i gulp --save-dev
+создаем gulpfile.js и пишем в нем var gulp = require('gulp'); (gulp this is the name in node_modules)

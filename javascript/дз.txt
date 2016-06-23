@@ -1,0 +1,28 @@
+var arrCars = [];
+var ED = [];
+  arrCars[0] = {
+  FirmName: prompt("¬ведите название машины"),
+  ModelName: prompt("¬ведите модель машины"),
+  EngineDisplacement: prompt("¬ведите объем двигател€ машины")
+  };
+arrCars[0].EngineDisplacement = parseFloat(arrCars[0].EngineDisplacement);
+arrCars[1] = {
+  FirmName: prompt("¬ведите название машины"),
+  ModelName: prompt("¬ведите модель машины"),
+  EngineDisplacement: prompt("¬ведите объем двигател€ машины")
+};
+arrCars[1].EngineDisplacement = parseFloat(arrCars[1].EngineDisplacement);
+arrCars[2] = {
+  FirmName: prompt("¬ведите название машины"),
+  ModelName: prompt("¬ведите модель машины"),
+  EngineDisplacement: prompt("¬ведите объем двигател€ машины")
+};
+arrCars[2].EngineDisplacement = parseFloat(arrCars[2].EngineDisplacement);
+
+ for (var i=0; i<arrCars.length; i++) {
+    if(arrCars[i].EngineDisplacement > 2.0) {
+    ED.push(arrCars[i].EngineDisplacement);
+    }
+  }
+console.log(arrCars);
+console.log(ED);
