@@ -1,0 +1,157 @@
+//  function test() {
+//    console.log(arguments);
+//  }
+//  test('test',123,[1,2,3]);
+/*[object Arguments] {
+  0: "test",
+  1: 123,
+  2: [1, 2, 3]
+}*/
+//====================================
+//  function test() {
+//    console.log(Array.prototype.join.call(arguments, '-'));
+//  }
+//  test('test',123,[1,2,3]);//"test-123-1,2,3"
+//====================================
+// function q (){
+//   var args = Array.prototype.slice.call(arguments);
+//   var first = args.shift();
+//   var last = args.pop();
+//   var sum = 0;
+//   for (var i=0; i<args.length; i++){
+//     sum += args[i];
+//   }
+//   return first * sum / last;
+// }
+// console.log(q(1,2,3,4,5,6,7,8));
+//===============ДАТЫ=====================
+// var date1 = new Date();
+// var date2 = +new Date();// вернет кол-во милисекунд с 1 января 1970 года 
+// console.log("Год " + date1.getFullYear());
+// console.log("Месяц " + date1.getMonth());
+// console.log("День " + date1.getDay());
+// console.log("Часы " + date1.getHours());
+// console.log("Минуты " + date1.getMinutes());
+// console.log("Секунды " + date1.getSeconds());
+//====================================
+// var date1 = new Date(2030, 9, 23);
+// console.log("Год " + date1.getFullYear());
+// console.log("Месяц " + date1.getMonth());
+// console.log("День недели считаем с 0" + date1.getDay());
+// console.log("День " + date1.getDate());
+//====================================
+//определяет какой день недели
+//function getWeekDay(year, month, day) {
+//var date = new Date(year, month-1, day);
+//return ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'][date.getDay()];
+//}
+//var day = getWeekDay(2016, 5, 10);
+//console.log(day); 
+//====================================
+// var date1 = new Date(2030, 9, 23);
+// date1.setHours(5);
+// date1.setMinutes(23);
+// date1.setSeconds(56);
+// console.log(date1.toString());
+//====================================
+// Сколько секунд уже прошло сегодня?
+// function getSecondsToday() {
+//   var now = new Date();
+//   var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+//   var diff = now - today; // разница в миллисекундах
+//   return Math.floor(diff / 1000); // перевести в секунды
+// }
+// console.log( getSecondsToday() );
+//=====================================
+// метод forEach
+// var arr = [1,3,65,-4,0,-11];
+// arr.forEach(function(item, index, arr) {
+//   arr[index] = item * item;
+// });
+// console.log(arr);
+/*Метод «arr.forEach(callback[, thisArg])» используется для перебора массива.
+Он для каждого элемента массива вызывает функцию callback.
+Этой функции он передаёт три параметра callback(item, i, arr):
+item – очередной элемент массива.
+i – его номер.
+arr – массив, который перебирается.*/
+//====================================
+// var arr = [1,3,65,-4,0,-11];
+// var newArr = arr.map(function(item, index, arr) {//Он создаёт новый массив, который будет состоять из результатов вызова callback(item, i, arr) для каждого элемента arr.
+//   return item * item;
+// });
+// console.log(newArr);
+//====================================
+// var arr = [1,3,65,-4,0,-11];
+// var newArr = arr.map(power);
+// console.log(newArr);
+// function power(item) {
+//   return item * item;
+// }
+//====================================
+//функция которая вернет положительные числа
+// var arr = [1,3,65,-4,0,-11];
+// var positiveNumbers = arr.filter(function(item){//Он создаёт новый массив, в который войдут только те элементы arr, для которых вызов callback(item, i, arr) возвратит true.
+//     return (item>=0);
+// });
+// console.log(positiveNumbers);//[1, 3, 65, 0]
+//====================================
+//вывести слова начинающиеся с большой буквы
+//  var testArray = ['One', 'Two', 'three', 'Four'];
+//  var upperCase = testArray.filter(function(item){
+//    return (item[0] === item[0].toUpperCase());
+//  })
+//  console.log(upperCase);
+//====================================
+/*every/some - Эти методы используется для проверки массива.
+Метод «arr.every(callback[, thisArg])» возвращает true, если вызов callback вернёт true для каждого элемента arr.
+Метод «arr.some(callback[, thisArg])» возвращает true, если вызов callback вернёт true для какого-нибудь элемента arr.*/
+// var arr = [1,3,65,-4,0,-11];
+// var res1 = arr.some(function(item){
+//   return (item<0);
+// });
+// console.log(res1);//true
+
+// var arr = [1,3,65,-4,0,-11];
+// var res1 = arr.every(function(item){
+//   return (item < 0);
+// });
+// console.log(res1);//false
+//====================================
+/*Метод «arr.reduce(callback[, initialValue])» используется для последовательной обработки каждого элемента массива с сохранением промежуточного результата.
+Метод reduce используется для вычисления на основе массива какого-либо единого значения, иначе говорят «для свёртки массива». Он применяет функцию callback по очереди к каждому элементу массива слева направо, сохраняя при этом промежуточный результат.
+Аргументы функции callback(previousValue, currentItem, index, arr):
+previousValue – последний результат вызова функции, он же «промежуточный результат».
+currentItem – текущий элемент массива, элементы перебираются по очереди слева-направо.
+index – номер текущего элемента.
+arr – обрабатываемый массив.*/
+// var arr = [1,2,3,4,5];
+// arr.reduce(function(previous, current) {
+//   console.log(previous + ' ' + current);
+//   return current;
+// });
+/*
+"1 2"
+"2 3"
+"3 4"
+"4 5"
+*/
+//====================================
+// var arr = [1,2,3,4,5];
+// var res = arr.reduce(function(previous, current) {
+//   console.log(previous+ ' + ' +current);
+//   return previous + current;
+// });
+/*"1 + 2"
+"3 + 3"
+"6 + 4"
+"10 + 5"*/
+//====================================
+// var arr = [[1,2,3,4,5],['e','q','w','a'],[{number: 5}]];
+// var res = arr.reduce(function(prev, current){
+//   return prev.concat(current);
+// });
+// console.log(res);
+/*[1, 2, 3, 4, 5, "e", "q", "w", "a", [object Object] {
+  number: 5
+}]*/

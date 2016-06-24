@@ -1,0 +1,123 @@
+Вызов obj instanceof Constructor возвращает true, если объект принадлежит классу Constructor или классу, наследующему от него.
+
+Пример использования:
+function Rabbit() {}
+// создаём объект
+var rabbit = new Rabbit();
+// проверяем -- этот объект создан Rabbit?
+alert( rabbit instanceof Rabbit ); // true, верно
+
+// function Animal (breed, age) {
+//   if (!(this instanceof Animal)) {// не принадлежит 
+//     return new Animal(breed, age);
+//   }
+//   this.breed = breed;
+//   this.age = age;
+// }
+// var monkey = Animal('monkey', 8);
+// console.log(Function instanceof Object);// true
+
+// function Plant() {
+//   this.country = 'Ukraine';
+//   this.organic = true;
+// }
+
+// var apple = new Plant();//create new obj
+// Plant.prototype.amIOrganic = function() {//присвоили некий объект
+//  return (this.organic) ? 'yes' : 'no';
+// };
+
+// Plant.prototype.showNameAndColor = function() {
+//   console.log('My name is ' + this.name + ' and my color is ' + this.color);
+// };
+
+// function Fruit(name, color) {
+//   this.name = name;
+//   this.color = color;
+// }
+
+// Fruit.prototype = new Plant();
+
+// var apple = new Fruit('aplle', 'green');
+
+// console.log(apple.amIOrganic());
+
+// console.log(Object.getPrototypeOf(apple));
+
+// var obj1 = {
+//   a:5,
+//   f: 'text'
+// };
+// obj1.toString = function() {
+//   console.log(this.a + this.f);//"5text"
+// };
+// console.log(obj1.toString());//undefined
+
+
+
+//СТРОКИ
+
+// var str = 'my beautiful string ';
+// var res = str.charCodeAt(1);// получили юникод сивола под номеровм 1
+// console.log(res);
+
+// var res2 = String.fromCharCode(1,1651)// выводит символы под юникодом в скобках
+// console.log(res2);
+
+// console.log(str.concat('1111 ', '2222'));//объединяет все в одну строку совместно с var str
+
+//var res = str.slice(3, 8);// вернет нам кусок строки от 3 до 8 индекса
+//console.log(res);
+
+//var res = str.split("i");//позволяет превратить строку в массив, разбив ее по разделителю в скобках ()
+//console.log(res);
+
+//Метод substring(start, end) возвращает подстроку с позиции start до, но не включая end.
+//var str = "stringify";
+//alert(str.substring(0,1)); // "s", символы с позиции 0 по 1 не включая 1.
+
+// var str = "_";
+// var res = str.repeat(10);//повторяет строку 10 раз
+// console.log(res);
+
+// var str = 'my beautiful string';
+// var res = str.split(' '); //разбили строку (массив)
+// console.log(res.join('-'));// соединили через - "my-beautiful-string"
+// var reversed = res.reverse();//разворачивает в обратную сторону строку
+// console.log(reversed); //["string", "beautiful", "my"]
+
+
+
+// function task(str) {
+//   var arr = str.split(' ').reverse(); //создали новую переменную присвоили ей значение: 1е-превратили строку в массив и разбили ее разделителем(" ") 2е-развернули строку
+ 
+//   var capitalized = arr.map(function(word) { // создали переменную и присвоили ей метод для трансформации массива(функцию)
+   
+//     return word.charAt(0).toUpperCase() + word.slice(1);
+//   });//вернули функцию word и нашли первый символ с позицией 0и первели его в верхний регистр
+ 
+//   return capitalized.join('-');//соединили массив через -
+// }
+
+// var res = task(prompt('my beatiful reversed and capitalized string'));//попросили у пользователя ввести предложение
+
+// console.log(res);
+
+
+//REG EXP (регулярки)
+. - воспадает абсолютно все
+/g - искать во всей строке 
+\. - ищем конкретно сивол точки
+\\ - находим слэш
+все мета-символы мы экранируем \
+[apple] - найдет все буквы по отдельности (в наборах выделяется 1 символ)
+gre[ea]t - найдет только слова gret grat
+gr[^ea]t - найдет кроме ea
+[A-Z] -найдет все заглавные буквы от A до Z
+[A-Z1-9] -найдет все заглавные буквы от A до Z и от 1 до 9 
+\d - от 0 до 9
+[\w] - от A-Za-z0-9_ 
+[\s] - означает \t\r\n (символ табуляции, возвращает в начало, символ новой строки )
+[^\d] - совпадает все кроме цифр
+[\D] - совпадает все кроме цифр
+f+ ищем f один или более раз(конкретно букву f)

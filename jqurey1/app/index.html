@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery - first example</title>
+		<meta charset="utf8"/>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="../bower_components/jquery/dist/jquery.js"></script>
+		<script src="script/script.js"></script>
+	</head>
+	<body>	
+		<div>
+			<select id="product"></select>
+			<select id="color"></select>
+			<input type="button" value="Add to cart" id="add"/>
+			<div class="img_wrap" id="img_wrap"></div>
+			<div id="cart" class="cart"></div>
+		</div>
+		<hr/>
+		<ul id="delegateClick">
+			<li class="first">First</li>
+			<li class="second">Second</li>
+		</ul>
+
+		<div id="test">
+			<input type="button" id="testClick" value="Click"/>
+			<input type="button" id="on" value="Turn on click button"/>
+			<input type="button" id="off" value="Turn off click button"/>
+			<p id="result"></p>
+		</div>
+		
+		<input type="button" id="one" value="One click"/>
+		
+		<div id="changeBg" class="changeBg">
+			<div id="scroll" class="scroll">
+				<ul class="none">
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+					<li>Event scroll was happened</li>
+				</ul>
+			</div>
+		</div>
+		<div>
+			<input type="button" id="trigger" value="trigger"/>
+			<input type="button" id="clicked" value="Click"/>
+		</div>
+		<a id="prevent" href="http://www.vk.com" target="_blank">VK</a>
+		<div id="stopPropagation" class="stopPropagation">stopPropagation</div>
+		<input type="text" value="Some select text" id="blur"/>
+
+		<select id="change">
+		  <option>First</option>
+		  <option selected="selected">Second</option>
+		  <option>Third</option>
+		  <option>Fourth</option>
+		  <option>Fifth</option>
+		  <option>Sixth</option>
+		</select>
+	</body> 
+</html>

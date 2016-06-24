@@ -1,0 +1,142 @@
+// var obj1 = {
+//   prop: 'some text'
+// };
+// var obj2 = obj1;
+// obj2.other = 5;
+// console.log(obj1.other);
+
+// delete obj1.prop;
+// console.log(obj2.prop);
+
+//перебрать массив с конца
+// var obj1 = {
+//   n1: 5,
+//   n2: 6,
+//   n3: 7
+// };
+
+// var props = ["n1", "n2", "n3"];
+// // console.log(obj1.n2);
+// for (var pr in obj1) {
+//   console.log(pr + ": " + obj1["n1"]);
+// }
+
+// for (var i=props.length-1; i>=0; i--) {
+//   console.log(obj1[props[i]]);
+// }
+
+// var obj1 = {a:1, b: 'text'}
+// myFunc(obj1);
+
+// console.log(obj1);
+
+// function myFunc(a) {
+//   a.c = 'new';
+// }
+
+// var interval = setInterval(function(){
+//   console.log('hello');
+// }, 1000);
+
+// setTimeout(functio(){
+//            clearInterval(iterval);
+//            }, 10000);
+
+// var myconstructor = function(name, model, engineDisplacement) {
+//   this.name = name;
+//   this.model = model;
+//   this.engineDisplacement = engineDisplacement;
+// };
+// var tesla = new myconstructor("tesla", 's', 123);
+// var tesla2 = new myconstructor("super", 'b', 3);
+// var tesla3 = new myconstructor("old", 'c', 5);
+// console.log(tesla, tesla2, tesla3);
+
+
+
+// var myconstructor = function(name, model, engineDisplacement) {
+//   this.name = name;
+//   this.model = model;
+//   this.engineDisplacement = engineDisplacement;
+//   this.sayParams = function() {
+//     console.log("hello, I'm "+ this.name + ' model' + this.model + ' whiz engine displacement ' + this.engineDisplacement);
+//   }
+// };
+// var car = new myconstructor('tesla', 's', 123);
+// // console.log(car);
+// car.sayParams();
+
+// function outer() {
+//   console.log("inside");
+//   function inside() {
+//     console.log('innerFunction');
+//   }
+//   inside();
+// }
+// outer();
+
+// написать функцию которая возводит x в степень y;
+// function pow(x,y) {
+//   var res = x;
+//   for (i=1; i<y; i++){
+//   res *=x;
+//   }
+//   console.log(res);
+// }
+// pow(2,3);
+
+//напишите функцию, которая принимает два аргумента: строку и букву и считает сколько раз эта буква встречается в строке
+// function asd(letter, str) {
+//   var res = 0;  
+//   for (var i=0; i<str.length; i++) {
+//     if (letter === str[i]) {
+//       res++;
+//     }
+//   }
+//   console.log(res);
+// }
+// str = prompt("enter a string");
+// letter = prompt("what letter u need to find");
+// asd(letter, str);
+
+// написать функцию которая принимает два аргумента (a=_ and b=/\/ и что бы случайным образом выдавало a and b (складывалось в строку
+// var timer = setInterval(function func() {
+//   console.log("_" + "/\\");
+// }, 1000);
+
+// setTimeout(function() {
+//   clearInterval(timer);
+// }, 5000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

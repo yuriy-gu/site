@@ -1,0 +1,57 @@
+.drag {
+	background: gray;
+	outline: 1px solid red;
+	padding: 10px;
+	width: 70px;
+	cursor: pointer;
+}
+.active {
+	background: green;
+}
+form {
+	display: inline-block;
+	padding: 25px;
+	border: 1px solid black;
+	position: relative;
+}
+form .submited {
+	display: block;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: black;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+}
+form * {
+	margin: 2px 0;
+}
+input[type="text"] {
+	margin-bottom: 15px;
+}
+.wrapperOuther {
+	border: 9px solid green;
+	display: inline-block;
+}
+.wrapperInner {
+	border: 9px solid blue;
+	display: inline-block;
+}
+.fieldWrap {
+	position: relative;
+	display: inline-block;
+}
+.fieldWrap_msg {
+    position: absolute;
+    left: 4px;
+    top: 21px;
+    color: red;
+    font-size: 13px;
+    display: none;
+}

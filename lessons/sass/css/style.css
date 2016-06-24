@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* in css it will be:
+.monday-icon {
+	background-image: url('/img/monday.png');
+}
+.tuesday-icon {
+	background-image: url('/img/tuesday.png');
+}
+.wednesday-icon {
+	background-image: url('/img/wednesday.png');
+}
+.thursday-icon {
+	background-image: url('/img/thursday.png');
+}*/
+.gray-icon {
+  background: url(../img/sprite.png) 0px 0px no-repeat;
+  /*╨╛╨▒╤А╨░╤Й╨░╨╡╨╝╤Б╤П ╨║ ╨╜╨░╤И╨╡╨╝╤Г img ╨╕ ╤В.╨║. ╨╜╨░╨╝ ╨╜╨░╨┤╨╛ ╤Б╨┤╨▓╨╕╨╜╤Г╤В╤М ╨┐╨╛ ╤Е, ╨▓╨╝╨╡╤Б╤В╨╛ 0 ╨┐╨╛╨┤╤Б╤В╨░╨▓╨╗╤П╨╡╨╝ ╨╜╨░╤И╤Г ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Г╤О*/
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+.yellow-icon {
+  background: url(../img/sprite.png) -16px 0px no-repeat;
+  /*╨╛╨▒╤А╨░╤Й╨░╨╡╨╝╤Б╤П ╨║ ╨╜╨░╤И╨╡╨╝╤Г img ╨╕ ╤В.╨║. ╨╜╨░╨╝ ╨╜╨░╨┤╨╛ ╤Б╨┤╨▓╨╕╨╜╤Г╤В╤М ╨┐╨╛ ╤Е, ╨▓╨╝╨╡╤Б╤В╨╛ 0 ╨┐╨╛╨┤╤Б╤В╨░╨▓╨╗╤П╨╡╨╝ ╨╜╨░╤И╤Г ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Г╤О*/
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+.red-icon {
+  background: url(../img/sprite.png) -32px 0px no-repeat;
+  /*╨╛╨▒╤А╨░╤Й╨░╨╡╨╝╤Б╤П ╨║ ╨╜╨░╤И╨╡╨╝╤Г img ╨╕ ╤В.╨║. ╨╜╨░╨╝ ╨╜╨░╨┤╨╛ ╤Б╨┤╨▓╨╕╨╜╤Г╤В╤М ╨┐╨╛ ╤Е, ╨▓╨╝╨╡╤Б╤В╨╛ 0 ╨┐╨╛╨┤╤Б╤В╨░╨▓╨╗╤П╨╡╨╝ ╨╜╨░╤И╤Г ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Г╤О*/
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+.green-icon {
+  background: url(../img/sprite.png) -48px 0px no-repeat;
+  /*╨╛╨▒╤А╨░╤Й╨░╨╡╨╝╤Б╤П ╨║ ╨╜╨░╤И╨╡╨╝╤Г img ╨╕ ╤В.╨║. ╨╜╨░╨╝ ╨╜╨░╨┤╨╛ ╤Б╨┤╨▓╨╕╨╜╤Г╤В╤М ╨┐╨╛ ╤Е, ╨▓╨╝╨╡╤Б╤В╨╛ 0 ╨┐╨╛╨┤╤Б╤В╨░╨▓╨╗╤П╨╡╨╝ ╨╜╨░╤И╤Г ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Г╤О*/
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+.blue-icon {
+  background: url(../img/sprite.png) -64px 0px no-repeat;
+  /*╨╛╨▒╤А╨░╤Й╨░╨╡╨╝╤Б╤П ╨║ ╨╜╨░╤И╨╡╨╝╤Г img ╨╕ ╤В.╨║. ╨╜╨░╨╝ ╨╜╨░╨┤╨╛ ╤Б╨┤╨▓╨╕╨╜╤Г╤В╤М ╨┐╨╛ ╤Е, ╨▓╨╝╨╡╤Б╤В╨╛ 0 ╨┐╨╛╨┤╤Б╤В╨░╨▓╨╗╤П╨╡╨╝ ╨╜╨░╤И╤Г ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Г╤О*/
+  display: inline-block;
+  width: 16px;
+  height: 16px; }
+
+/**/
+
+/*# sourceMappingURL=style.css.map */

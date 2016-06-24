@@ -1,0 +1,46 @@
+.box {
+	width: 100px;
+	height: 100px;
+	/*padding: 20px;
+	margin: 20px;*/
+	background: gray;
+	/*border: 5px solid red;*/
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	border-radius: 50%;
+}
+
+.pacman {
+	width: 100px;
+	height: 100px;
+}
+
+.wrap {
+	width: 900px;
+	height: 900px;
+	outline: 1px solid red;
+	margin: 0 auto;
+}
+.box, .circle {
+	display: inline-block;
+}
+.img {
+	width: 550px;
+	height: auto;
+	display: block;
+}
+.cnt:after {
+	content: '';
+	clear: both;
+}
+.slides, .btn {
+	float: left;
+}
+
+.btn {
+	margin-left: 150px;
+}

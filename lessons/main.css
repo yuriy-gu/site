@@ -1,0 +1,76 @@
+/*if div > p - all p in div only if div is parent */
+/*if div + p - only for next(first) p which folowed after div (div ++ p only for second p)*/
+/*a:link | a:visited | a:hover | a:active*/
+/*list-style-position: inside | outside*/
+/*list-style: list-style-type || list-style-position || list-style-image*/
+/*git pull download from git*/
+/*git push -u origin master*/
+/*git remote*/
+/*git clone http://..... - adress*/
+
+/*SASS - .scss*/
+/*БЭМ посмотреть что это(методологии)*/
+/*atomic css*/
+
+
+.block {
+	background-color: green;
+	height: 100px;
+	width: 400px;
+	padding: 50px;
+	margin-left: 50px;
+	border: 3px solid red;
+}
+b {
+	padding-top: 150px;
+}
+.slider {
+	background-color: #f2f2f2;
+	text-align: center;
+}
+.slider_text h1,
+.slider_text p {
+	color: #444;
+	transform: 
+}
+.slider_text p {
+	padding-top: 5px;
+	text-shadow: 4px 5px 6px black;
+}
+.slider hr {
+	background-color: #b6b6b6;
+	height: 3px;
+	margin-top: 20px;
+}
+.slider_img {
+	background: repeating-linear-gradient(-45deg, #fff, #fff 25px, #e2edc1 25px, #e2edc1 50px) fixed;
+	border: 2px solid yellow;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	padding: 10px;
+	margin: 0 20px;
+	box-shadow: 7px 6px 23px 4px red;
+	border-radius: 30px;
+
+}
+.slider_img a {
+	color: #b6b6b6;
+}
+.slider_img img {
+	height: 130px;
+	width: 140px;
+	opacity: 0.5;
+}
+.item_name {
+	display: block;
+}
+
+li {
+	list-style: none;
+}
+ul>li>ul {
+	display: none;
+}

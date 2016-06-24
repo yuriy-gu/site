@@ -1,0 +1,49 @@
+// var str = 'i like regexp like';
+// var index = str.search(/like/);
+// var res = str.match(/like/g);
+
+/* var str2 = '05-07-2014';
+ var result = str2.replace(/-/g, '/');
+ console.log(result);//"05/07/2014"*/
+
+/*var str2 = '05-07-2014';
+var result = str2.replace(/-/g, function(str,offset, orig) {
+  console.log(str + 'is found on the position ' + offset);//  "-is found on the position 2" "-is found on the position 5"
+});*/
+
+/*var str = 'i like regexp like';
+var reg = /like/;
+var res = reg.test(str);
+console.log(res);//true у нас есть like в строке (str)*/
+
+/*var str = 'Многое по JavaScript можно найти на сайте http://javascript.ru';
+
+var regexp = /javascript/ig;
+var result;
+
+console.log( "Начальное значение lastIndex: " + regexp.lastIndex );
+
+while (result = regexp.exec(str)) {
+  console.log( 'Найдено: ' + result[0] + ' на позиции:' + result.index );
+  console.log( 'Свойство lastIndex: ' + regexp.lastIndex );
+}
+
+console.log( 'Конечное значение lastIndex: ' + regexp.lastIndex );*/
+
+bind для привязки контекста
+Напишем вспомогательную функцию bind(func, context), которая будет жёстко фиксировать контекст для func:
+
+function bind(func, context) {
+  return function() { // (*)
+    return func.apply(context, arguments);
+  };
+}
+Посмотрим, что она делает, как работает, на таком примере:
+function f() {
+  alert( this );
+}
+var g = bind(f, "Context");
+g(); // Context
+То есть, bind(f, "Context") привязывает "Context" в качестве this для f.
+Посмотрим, за счёт чего это происходит.
+Результатом bind(f, "Context"), как видно из кода, будет анонимная функция (*).

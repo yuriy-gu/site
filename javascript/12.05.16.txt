@@ -1,0 +1,149 @@
+//проверяет есть ли одинаковые буквы в слове
+// function test(word){
+//   var word = word.split('');
+//   return word.some(function(letter, index) {
+//     if (index > 0) {// что бы начинал сравнивать со 2 буквы
+//       return letter.toLowerCase() === word[index-1].toLowerCase();
+//     }
+//   });
+// }
+// console.log(test('word'));//false
+//==================================================
+//проверяет есть ли одинаковые буквы в слове
+//поочередно сравниваем буквы друг с другом
+//  function test1(word) {
+//    var word = word.split('');//разбиваем на массив
+//    return word.reduce(function(previous, current, index){
+//       if (index > 0) {// что бы начинал сравнивать со 2 буквы
+//         return previous || current.toLowerCase() === word[index-1].toLowerCase();
+//       }
+//    }, false);
+//  }
+//  console.log(test1('worlld'));//false
+//==================================================
+// for(var i=0; i<3; i++) {
+//   setTimeout(function(){
+//     console.log('hello');//'hello' 'hello' 'hello' через 3 секунды
+//   }, 3000);
+// }
+//==================================================
+//IIFE - анонимная функция которую мы дальше не можем использовать
+// var i = 10;
+// (function(myI){
+//   console.log(myI);
+// })(i);
+//==================================================
+//генератор уникальных id
+// var generator = (function(){
+//   var id = 0;
+//   function increment(){
+//     return id++;
+//   }
+//   function set(value){
+//     id = value;
+//   }
+//   function reset(){
+//     id = 0;
+//   }
+//   return {
+//     increment: increment,
+//     set: set,
+//     reset: reset
+//   };
+// })();
+// console.log(generator.increment());//0
+// console.log(generator.increment());//1
+// console.log(generator.set(22));//undefined
+// console.log(generator.increment());//22
+// console.log(generator.increment());//23
+// console.log(generator.increment());//24
+// console.log(generator.reset());//undefined
+// console.log(generator.increment());//0
+// console.log(generator.increment());//1
+//==================================================
+// (function loop(i){
+//   setTimeout(function(){
+//     console.log('hello');//через каждые 3 сек выведет hello
+//     if (--i) loop(i);
+//   }, 3000)
+// })(3);
+//==================================================
+// Замыкания
+// function setName(name) {
+//   var innerName = name;
+  
+//   function showName() {
+//     console.log(innerName);
+//   }
+//   return showName();
+// }
+// setName('Bob');
+//==================================================
+//РЕКУРСИЯ - функция вызывает сама себя
+// function pow(base, power) {
+//   return (pow === 1)? base : base * pow(base, power-1);
+// }
+// console.log(pow(2,3));//2 в 3 степени
+/*pow(2,3)будт 8
+     (2,2)идем наверх
+     (2,1)идем наверх*/
+//==================================================
+// function sumTo(n) {
+//    return (n === 1) ? n : n + sumTo(n-1);
+// }
+// console.log(sumTo(10));//55
+//==================================================
+// var obj = {a:5, str:'test'};
+// var stringified = JSON.stringify(obj);//преобразует в строку
+// console.log(stringified);
+// var obj2 = JSON.parse(stringified);//преобразует в объект
+// obj2.newProp = 'new';
+// console.log(obj2, obj);
+//==================================================
+//вызов ошибки
+// try {
+//   throw new Error('zero division');
+// } catch (err) {
+//   console.log(err.name);//"Error"
+//   console.log(err.message);//"zero division"
+// } finally {
+//   console.log('finally');//"finally"
+// }
+
+
+
+
+//==================================================
+//DOM-elements
+//node - узел
+//Element node - <a>,<p>,<body>
+//Text nodes - <p>...</p>
+//Attribute node - <a href>
+//getElementById('age')
+//getElementByClassName('qwerty')
+//getElementByTagName('input')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
