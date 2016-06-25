@@ -12,6 +12,27 @@ server.on('listening', () => {
 });
 
 server.on('request', (req, res) => {
+	if(req.method === 'POST' && req.url === '/concat') {
+		let result = [];
+		req
+			.on('data', data => result.push(data))
+			.on('end', () => {
+				result = Buffer.concat(result).toString();
+				fs.appendFile('messages.txt', '\n\n'+result, (err) => {
+					if (!err) {
+						res.writeHead(200, {
+							'Set-Cookie': 'form=true'
+						});
+						console.log('asd');
+						res.end(JSON.stringify({result: 'OK'}));
+					}
+				});
+			})
+	}
+	return;
+})
+
+server.on('request', (req, res) => {
 	let filePath = (req.url === '/')? '/public/index.html' : '/public' + req.url;
 	let contentType = 'text/html';
 	let extName = path.extname(req.url);
