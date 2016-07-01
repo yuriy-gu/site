@@ -1,38 +1,10 @@
 'use strict';
 let imgFolder = 'img/';
 let imgCarousel = [
-	{
-		title: 'Spirit_XT185',
-		image: 'Spirit_XT185.jpeg'//имена картинок в нашей папке img
-	},
-	 {
-		title: 'USA_Style_(SS-401)',
-		image: 'USA_Style_(SS-401).jpeg'
-	},
-	  {
-		title: 'USA_Style_(SS-1365)',
-		image: 'USA_Style_(SS-1365).jpeg'
-	},
-	  {
-		title: 'FitLogic_BF6100',
-		image: 'FitLogic_BF6100.jpeg'
-	},
-	 {
-		title: 'item5',
-		image: 'golf.png'
-	},
-	 {
-		title: 'item6',
-		image: 'hockey.png'
-	},
-	 {
-		title: 'item7',
-		image: 'sliderImg5.png'
-	},
-	 {
-		title: 'item8',
-		image: 'sliderImg6.png'
-	}];
+	{id:1, title: 'test1', image: 'FitLogic_BF6100.jpeg'},
+	{id:2, title: 'test2', image: 'Spirit_XT185.jpeg'},
+	{id:3, title: 'test3', image: 'USA_Style_(SS-401).jpeg'},
+	{id:4, title: 'test4', image: 'USA_Style_(SS-1365).jpeg'}];
 let startIndex = 0;
 
 let sliderLeftHandler = document.getElementById('prev');
@@ -60,47 +32,47 @@ assignImages();
 
 //table
 let list = [
-	{id:1, title: 'test1'},
-	{id:2, title: 'test2'},
-	{id:3, title: 'test3'},
-	{id:4, title: 'test4'},
-	{id:5, title: 'test5'},
-	{id:6, title: 'test6'},
-	{id:7, title: 'test7'},
-	{id:8, title: 'test8'},
-	{id:9, title: 'test9'},
-	{id:10, title: 'test10'},
-	{id:11, title: 'test11'},
-	{id:12, title: 'test12'},
-	{id:13, title: 'test13'},
-	{id:14, title: 'test14'},
-	{id:15, title: 'test15'},
-	{id:16, title: 'test16'},
-	{id:17, title: 'test17'},
-	{id:18, title: 'test18'},
-	{id:19, title: 'test19'},
-	{id:20, title: 'test20'},
-	{id:21, title: 'test21'},
-	{id:22, title: 'test22'},
-	{id:23, title: 'test23'},
-	{id:24, title: 'test24'},
-	{id:25, title: 'test25'},
-	{id:26, title: 'test26'},
-	{id:27, title: 'test27'},
-	{id:28, title: 'test28'},
-	{id:29, title: 'test29'},
-	{id:30, title: 'test30'},
-	{id:31, title: 'test31'},
-	{id:32, title: 'test32'},
-	{id:33, title: 'test33'},
-	{id:34, title: 'test34'},
-	{id:35, title: 'test35'},
-	{id:36, title: 'test36'},
-	{id:37, title: 'test37'},
-	{id:38, title: 'test38'},
-	{id:39, title: 'test39'},
-	{id:40, title: 'test40'},
-	{id:41, title: 'test41'}];
+	{id:1, title: 'test1', image: 'FitLogic_BF6100.jpeg'},
+	{id:2, title: 'test2', image: 'Spirit_XT185.jpeg'},
+	{id:3, title: 'test3', image: 'USA_Style_(SS-401).jpeg'},
+	{id:4, title: 'test4', image: 'USA_Style_(SS-1365).jpeg'},
+	{id:5, title: 'test5', image: 'footbal.png'},
+	{id:6, title: 'test6', image: 'aboutUs_2.png'},
+	{id:7, title: 'test7', image: 'catalog.png'},
+	{id:8, title: 'test8', image: 'USA_Style_(SS-1365).jpeg'},
+	{id:9, title: 'test9', image: 'sliderImg5.png'},
+	{id:10, title: 'test10', image: 'hockey.png'},
+	{id:11, title: 'test11', image: 'golf.png'},
+	{id:12, title: 'test12', image: 'footbal.png'},
+	{id:13, title: 'test13', image: 'catalog.png'},
+	{id:14, title: 'test14', image: 'basketball.png'},
+	{id:15, title: 'test15', image: 'aboutUs_3.png'},
+	{id:16, title: 'test16', image: 'aboutUs_2.png'},
+	{id:17, title: 'test17', image: 'aboutUs_1.png'},
+	{id:18, title: 'test18', image: 'FitLogic_BF6100.jpeg'},
+	{id:19, title: 'test19', image: 'Spirit_XT185.jpeg'},
+	{id:20, title: 'test20', image: 'USA_Style_(SS-401).jpeg'},
+	{id:21, title: 'test21', image: 'USA_Style_(SS-1365).jpeg'},
+	{id:22, title: 'test22', image: 'hockey.png'},
+	{id:23, title: 'test23', image: 'basketball.png'},
+	{id:24, title: 'test24', image: 'aboutUs_1.png'},
+	{id:25, title: 'test25', image: 'aboutUs_3.png'},
+	{id:26, title: 'test26', image: 'sliderImg5.png'},
+	{id:27, title: 'test27', image: 'catalog.png'},
+	{id:28, title: 'test28', image: 'FitLogic_BF6100.jpeg'},
+	{id:29, title: 'test29', image: 'golf.png'},
+	{id:30, title: 'test30', image: 'sliderImg5.png'},
+	{id:31, title: 'test31', image: 'aboutUs_3.png'},
+	{id:32, title: 'test32', image: 'USA_Style_(SS-1365).jpeg'},
+	{id:33, title: 'test33', image: 'aboutUs_1.png'},
+	{id:34, title: 'test34', image: 'USA_Style_(SS-1365).jpeg'},
+	{id:35, title: 'test35', image: 'aboutUs_1.png'},
+	{id:36, title: 'test36', image: 'aboutUs_1.png'},
+	{id:37, title: 'test37', image: 'aboutUs_1.png'},
+	{id:38, title: 'test38', image: 'aboutUs_1.png'},
+	{id:39, title: 'test39', image: 'aboutUs_1.png'},
+	{id:40, title: 'test40', image: 'aboutUs_1.png'},
+	{id:41, title: 'test41', image: 'aboutUs_1.png'}];
 let offset = 0;
 
 let tablePaginator = document.getElementById('product_table_pagination')//пагинатор таблицы
@@ -156,14 +128,63 @@ function renderTheTable() {
 	});
 }
 
-function removeItemFromSlider (id) {
-	console.log(id);
+//из табл в слайдер
+function removeItemFromSlider(id) {
+	if (imgCarousel.findIndex(el => el.id === id) === -1 || imgCarousel.length === 4) {return;}
+	let myElem = imgCarousel.findIndex(el => el.id === id);
+	imgCarousel.splice(myElem, 1);
+	assignImages();
 }
 
-function addItemToSlider (id) {
-	console.log(id);
+function addItemToSlider(id) {//id из строчки 133
+	//1. найти элемент с этим id в list
+	//2. запушить в imgCarousel
+	//3. перендерить карусель
+	/*let elementToPush;
+	list.forEach(elem => {//Метод forEach() выполняет функцию callback один раз для каждого элемента, находящегося в массиве в порядке возрастания. Она не будет вызвана для удалённых или пропущенных элементов массива. Однако, она будет вызвана для элементов, которые присутствуют в массиве и имеют значение undefined.
+		if (elem.id === id) {
+			elementToPush = elem;
+		}
+	});
+	assignImages();*/
+	//or we do this (the same as top)
+	if (imgCarousel.findIndex(el => el.id === id) !== -1) {return;}
+	let myElem = list.find(el => el.id === id);
+	imgCarousel.unshift(myElem);
+	assignImages();
 }
 
 renderTheTable();
 
 createPaginator();
+
+//contact form
+function httpRequest(url, method, data=null) {
+	return new Promise((resolve, reject) => {
+		let req = new XMLHttpRequest();
+		req.open(method, url, true);
+		req.send(data);
+		req.onreadystatechange = function() {
+			if(req.readyState !== 4) return;
+			if(req.status !== 200) {
+				reject(req.status + ': ' + req.statusText);
+			} else {
+				resolve(req.responseText);
+			}
+		}
+	});
+}
+
+let myForm = document.getElementById('contactForm');
+myForm.addEventListener('submit', submitForm);
+
+function submitForm() {
+	event.preventDefault();
+	let data = {
+		name: myForm.name.value,
+		email: myForm.email.value,
+		message: myForm.message.value,
+	};
+	httpRequest('/concat', 'POST', JSON.stringify(data))
+	.then();
+}

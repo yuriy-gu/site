@@ -156,8 +156,8 @@ body {
 				vertical-align: middle;
 				cursor: pointer;
 			}/* /td */
-			.delete_img { color: $table_del; }
-			.add_img { color: $table_add; }
+			.catalog_table_button_delete { background: url(../img/add_del.jpg); background-size: cover; height:30px; display: block;}
+			.catalog_table_button_add { background: url(../img/add_del.jpg); background-size: cover; height:30px; display: block;}
 		}/* /catalog table */
 		img { border-radius: 20px; max-width: 100%; }
 		.catalog_pagination {

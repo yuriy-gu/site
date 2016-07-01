@@ -279,20 +279,20 @@
 
 
 	<!-- CONTACTS -->
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="container">
 			<div class="contact_form row">
 				
 				<div class="col-lg-6 col-md-6 col-sm-6">
-				<form action="#" method="post">
+				<form id="contactForm">
 				<h2>ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
 					<div>
 						<label for="name">ВАШЕ ИМЯ:</label>
-						<input type="name" id="name" placeholder="Ваше имя" autocomplete="off" />
+						<input name="name" type="name" id="name" placeholder="Ваше имя" autocomplete="off" maxlength="40" required />
 					</div>
 					<div>
 						<label for="email">ВАШ E-MAIL:</label>
-						<input type="email" id="email" placeholder="Ваш e-mail" autocomplete="off" />
+						<input name="email" type="email" id="email" placeholder="Ваш e-mail" autocomplete="off" required />
 					</div>
 					<h3>ВЫБЕРИТЕ ТЕМУ ДЛЯ ПИСЬМА И НАПИШИТЕ СООБЩЕНИЕ</h3>
 					<div>
@@ -307,16 +307,16 @@
 					</div>
 					<div>
 						<label for="message">СООБЩЕНИЕ</label>
-						<textarea name="" id="message"></textarea>
+						<textarea name="message" id="message" required></textarea>
 					</div>
 					<h3>ВВЕДИТЕ КАПЧУ И НАЖМИТЕ "ОТПРАВИТЬ"</h3>
 					<div>
 						<label>9 + 18 =</label>
-						<input type="text" />
+						<input name="capcha" type="number" required />
 					</div>
 					<div id="buttons">
-						<input type="submit" value="Отправить" />
-						<input type="reset" value="Очистить" />
+						<input name="submit" type="submit" value="Отправить" />
+						<input name="reset" type="reset" value="Очистить" />
 					</div>
 				</form>
 			</div> <!-- /col -->
