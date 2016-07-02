@@ -1,3 +1,6 @@
+//http://tympanus.net/Tutorials/CreativeCSS3AnimationMenus/index10.html
+//http://html5.by/blog/flexbox/
+
 /*"use strict";
 $(document).ready(function() {
     // hashchange event
@@ -49,18 +52,29 @@ $(document).ready(function() {
     
     let $sideBar = $('#leftSideMenu'),
         $menuList = $('#menuList'),
-        $content = $('#content');
+        $content = $('#content'),
+        i = 0;
 
 
 
-     //$('#leftSideMenu').on('click', function(event) {
-        //if (this === event.currentTarget)
-    //          $sideBar.animate({
-    //              width: '220'}, 1000);
-    //          $menuList.css({
-    //              display: 'block'});
+     $('#leftSideMenu').on('click', function(event) {
+        if (i === 0) {
+              $sideBar.animate({
+                width: '220'}, 1000);
+              $menuList.css({
+                  display: 'block'});
+              i = 1
+              console.log(true);
+          } else {
+            $menuList.css({
+                  display: 'none'});
+            $sideBar.animate({
+                width: '60px'}, 1000);
+            i = 0;
+            console.log(false);
+          }
+     });
+    // $("#leftSideMenu").click(function(){
+    // $("#menuList").toggleClass("show hide");
     // });
-    $("#leftSideMenu").click(function(){
-    $("#menuList").toggleClass("show hide");
-    });
 });

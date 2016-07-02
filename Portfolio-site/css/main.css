@@ -34,20 +34,12 @@ aside {
 	transition: transform 0.4s ease;
 }
 
-/*aside ul { 
+aside ul { 
 	display: none;
 	margin-top: 104px;
-	margin-left: -18%;
-}*/
-.show {
-	display: block;
-	margin-top: 104px;
-	margin-left: -18%;
+	margin-left: -2.1em;
 }
-.hide {
-	display: none;
-	transition: transform 0.4s ease;
-}
+
 aside ul li {
 	background: url(../img/sideBarBackground.png) no-repeat;
 	border-radius: 20px;

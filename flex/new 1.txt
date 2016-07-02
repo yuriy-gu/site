@@ -1,0 +1,8 @@
+<div class="flex-container">
+  <div class="flex-block footer-left">Footer left</div>
+  <div class="flex-block content">Content</div>
+  <div class="flex-block footer-right">Footer right</div>
+  <div class="flex-block header">Header</div>
+  <div class="flex-block sidebar">Sidebar</div>
+  <div class="flex-block menu">Menu</div>
+</div>
