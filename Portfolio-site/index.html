@@ -5,20 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<script src="js/jquery.min.js"></script>
-	<script src="js/app.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<section id="content">
-		<div class="noteText">
-			<h1>Welcome to my recap-page</h1>
-			<p>My name is Yuriy<br/> and this is my <a href="#">portfolio</a></p>
-		</div>
-	</section>
-	<aside id="leftSideMenu">
-		<ul id="menuList">
+	<nav id="push_menu">
+	<div id="close"></div>
+		<ul class="links">
 			<li>
-				<a href="#">About me</a>
+				<a href="#" id="aboutMe">About me</a>
 			</li>
 			<li>
 				<a href="#">Education</a>
@@ -39,6 +34,19 @@
 				<a href="#">Contacts</a>
 			</li>
 		</ul>
-	</aside>
+	</nav>
+	<section>
+		<div id="nav_list"></div>
+		<div class="main">
+			<h1>HTML ВЕРСТАЛЬЩИК</h1>
+			<h2>JUNIOR FRONT-END DEVELOPER</h2>
+			<p>Welcome to my recap page</p>
+			<div id="mouse" class="animated bounceInDown">
+				<a href="#"></a>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/app.js"></script>
 </body>
 </html>
