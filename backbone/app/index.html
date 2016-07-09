@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Backbone</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="app"></div>
+	 
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/underscore/underscore-min.js"></script>
+        <script src="../bower_components/backbone/backbone-min.js"></script>
+
+
+
+        <script type="text/template" id="item-template">
+            <input type="button" value="Add new" id="add" />
+            <hr/>
+            <div class="emp_wrap">
+               <p>Employees name: <%= name %> - <input type="button" value="Edit" class="edit" data-model="<%= id%>"/></p>
+            </div>
+            <div id="fullInfo" class="fullInfo"></div>
+        </script>
+
+
+
+        <script type="text/template" id="item-template">
+            <div>
+                <p>
+                    employess name: <%=title%>
+                </p>
+            </div>
+            <input type="button" value="Button" id="button">
+        </script>
+
+
+
+        <script src="js/model.js"></script>
+        <script src="js/collections.js"></script>
+        <script src="js/view.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

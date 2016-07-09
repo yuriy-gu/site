@@ -1,0 +1,101 @@
+include data.jade
+// its a comment
+//- if we wount see this comment in html we should use //-
+
+mixin cnt(val)
+	var a = data.length
+	div
+		img(src="../img/phones")
+		h2=val.name
+
+
+
+//-
+	div
+		p Some text
+
+			div(class="wrapper", id="cnt")
+				input(
+				type="checkbox"
+				name="check"
+				checked
+				)
+				
+				input(type='checkbox', checked)
+				input(type='checkbox', checked=true)
+				input(type='checkbox', checked=false)
+
+			div(style={background:'red', color:'green'})
+
+			- var myClasses = ['one', 'two', 'three']
+			div(class=myClasses)
+
+			- var state ='active'
+			a(class={active:state ==='active'} href='#') hello
+
+			div#qwerty
+			div.text
+
+			- var dataList = {'data-test':'one'};
+
+			div#cnt(data-foo='bar')&attributes(dataList)
+
+			| sometext
+
+			p.
+				qwojoweqfjdsofpsdf
+
+			- var name ='ivan'
+			p Hello #{name}
+			
+			// выводит на экран тег а (все что идет после =)
+			- var simpleParagraph = '<a href="#">my link </a>'
+			.text
+				p Link: #{simpleParagraph}
+
+			#[a(target='_blank', href='#') simple link]
+
+			- var yers = 0
+			case yers
+				when 0
+					p you have no experience
+				when 1
+					p you have very small exp
+				default
+					p you have exp #{yers} yers
+
+			-var test ='Hello world'
+			p=test
+
+			-var check = true
+			-var someText = {text:'Hello world'}
+			#user
+				if check
+					=someText.text
+				else
+					p
+
+			ul
+				each val in[1,2,3,4,5]
+					li=val
+
+			ul
+				each val, index in{1:'one',2:'two',3:'three'}
+					li=index = ':' + val
+
+			- var n = 0
+			ul
+				while n < 4
+					li=n++
+			
+			// mixin
+			mixin man(name)
+				li=name
+			ul
+				+man('Ivan')
+
+
+
+
+
+

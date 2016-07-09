@@ -1,0 +1,20 @@
+	<script type="text/template" id="item-template">
+            <input type="button" value="Add new" id="add" />
+            <hr/>
+            <div class="emp_wrap">
+               <p>Employees name: <%= name %> - <input type="button" value="Edit" id="edit" data-model="<%= id%>"/></p>
+            </div>
+            <div id="fullInfo" class="fullInfo"></div>
+        </script>
+
+        <script type="text/template" id="item-onePerson">
+            <p>Employees name: <%= name %> - <input type="button" value="Edit" id="edit" data-model="<%= id%>"/></p>
+        </script>
+        
+        <script type="text/template" id="full-template">
+            <p>Employees name: <input type="text" value="<%= name %>"/></p>
+            <p>Employees age: <input type="text" value="<%= age %>"/></p>
+            <p>Employees experience: <input type="text" value="<%= experience %>"/></p>
+            <p>Employees adress: <input type="text" value="<%= adress %>"/></p>
+            <input type="button" value="Save" id="save" />
+        </script>

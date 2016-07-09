@@ -1,0 +1,45 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #FFFFFF;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 700px;
+	outline: 1px solid red;
+}
+.cnt {
+	display: flex;
+	list-style: none;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	padding: 0;
+    margin: 0;
+}
+.cnt .item {
+	border: 1px solid black;
+	border-radius: 5px;
+	max-width: 200px;
+	margin: 5px;
+	padding: 5px;
+}
+.item .name {
+	font-size: 14px;
+}
+.nameWrap {
+    display: flex;
+    justify-content: center;
+}
+.nameWrap .img {
+    width: auto;
+    height: 50px;
+}
+.light {
+	background: yellow;
+}
+.dark {
+	background: grey;
+}
