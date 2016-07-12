@@ -1,0 +1,42 @@
+	<script type="text/template" id="people_wrap">
+            <ul>
+                <li>
+                    <a href="#employeesList">employeesList</a>
+                </li>
+                <li>
+                    <a href="#employeesTable">employeesTable</a>
+                </li>
+            </ul>
+            <input type="button" value="Add new" id="add" />
+            <hr/>
+            <div id="emp_list" class="emp_wrap"></div>
+            <div id="fullInfo" class="fullInfo"></div>
+        </script>
+        <script type="text/template" id="item-onePerson">
+            <p>Employees name: <%= name %> - <input type="button" value="Edit" id="edit" data-model="<%= cid%>"/></p>
+        </script>
+
+        <script type="text/template" id="people_wrap_table">
+            <ul>
+                <li><a href="#employeesList">employeesList</a></li>
+                <li><a href="#employeesTable">employeesTable</a></li>
+            </ul>
+            <table id="empTable"></table>
+        </script>
+        <script type="text/template" id="item-onePerson_table">
+            <tr>
+                <td>Employees name:</td><td class="bold"><%= name %></td>
+                <td>Employees age:</td><td class="bold"><%= age %></td>
+                <td>Employees experience:</td><td class="bold"><%= experience %></td>
+                <td>Employees adress:</td><td class="bold"><%= adress %></td>
+            </tr>
+        </script>
+        
+        <script type="text/template" id="full-template">
+            <p>Employees name: <input type="text" id="name" value="<%= name %>" class="require"/></p>
+            <p>Employees age: <input type="text" id="age" value="<%= age %>" class="require"/></p>
+            <p>Employees experience: <input type="text" id="experience" value="<%= experience %>" class="require"/></p>
+            <p>Employees adress: <input type="text" id="adress" value="<%= adress %>" class="require"/></p>
+            <input type="button" value="Save" id="save" data-model="<%= id%>"/>
+            <input type="button" value="Cancel" id="cancel"/>
+        </script>

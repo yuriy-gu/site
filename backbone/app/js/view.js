@@ -1,58 +1,57 @@
-var TodosView = Backbone.View.extend({
-	//el: '#app',
-	el: '#test',
-	allPersonTpl: _.template( $('#item-template').html() ),
+var EmpView = Backbone.View.extend({
+	el: '#app',
+	peopleWrapTpl: _.template( $('#people_wrap').html() ),
 	onePersonTpl: _.template( $('#item-onePerson').html() ),
+	//onePeopleTableTpl: _.template( $('#item-onePerson_table').html() ),
 	personInfoTpl: _.template( $('#full-template').html() ),
-	tagName: 'li',
-	className: 'container',
-	id: 'todos',
-
-	//its for: var todosView = new TodosView({model: myTodo});
-	/*render:function(){
-		this.$el.html('<h1>hello</h1>');
-	},*/
-	
-
-	//todoTpl: _.template($('#item-template').html()),
-	
-	render:function(){
-		var content = this.allPersonTpl(this.model.toJSON());
-		this.$el.append(content)
+	render: function(tpl){
+		var content = this[tpl]();
+			this.$el.html(content);
 	},
 	makeList: function(person) {
-	  	var content = this.onePersonTpl(person);
-	  	this.$el.find('.emp_wrap').append(content)
+		if (person) {
+			var content = this.onePersonTpl(person);
+			//debugger;
+			person.attributes.cid = person.cid;
+			this.$el.find('#emp_list').append(content)
+		} else {
+			_.each(empCollection.models, function(el){
+				var content = this.onePersonTpl(el.toJSON());
+				this.$el.find('#emp_list').append(content);
+			}, this);
+		}
+	},
+	makeTable: function() {
+		_.each(empCollection.models, function(el){
+			//var content = this.onePeopleTableTpl(el.toJSON());
+			this.$el.find('#empTable').append(content);
+		}, this);
 	},
 	events: {
-	 	'click .edit': 'edit',
-	 	'click #add': 'add',
-	 	'click .save': 'save'
+		'click #edit': 'edit',
+		'click #add': 'add',
+		'click #save': 'save'
 	},
-
-	edit:function(e) {
-		var dataModel = $(e.target).data('model');
-		var model = todosCollection.get(dataModel);
-	}
-
+	edit: function(e) {
+		var model_id = $(e.target).data('model'),
+			model_data = empCollection.get(model_id).toJSON(),
+			model_content = this.personInfoTpl(model_data);
+		$('#fullInfo').html(model_content);
+	},
 	add: function(e) {
-		var id = todosCollection.models.length + 1;
-		todosCollection.add({id: 2});
+		
+		empCollection.add({});
+	},
+	save: function(e) {
+		var model_id = $(e.target).data('model');
+		var fields = $('.require');
+		var data = {};
+		_.each(fields, function(el) {
+			var $el = $(el);
+			var name = $el.attr('id');
+			data[name] = $el.val();
+		});
+		data.id = model_id;
+		empCollection.add(data, {merge: true})
 	}
-
-	//events:{
-	//	'click #button': 'toggleCompleted'
-	//},
-	//toggleCompleted: function(e){
-	//	alert('message');
-	//}
-
 });
-
-//its for el, tagName, className, id
-//var todosView = new TodosView();
-//console.log(todosView);
-
-//its for render
-var todosView = new TodosView({model: myTodo});
-todosView.render();
