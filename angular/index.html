@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app='myApp' lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="js/common.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller='myAppCtrl'>
+
+	<div>
+	{{name}}
+		<input ng-model='name' value='' />
+	</div>
+
+	<div>
+		<input type="button" ng-click='changeName()' value="press me" />
+	</div>
+	
+	<input type="button" ng-click='changeBg(blockBg)' value="Change color" class="Change_color" />
+	<div class="diff_color" ng-hide='isHide' style='background:{{blockBg}}'></div>
+
+
+
+	<input type="button" ng-repeat='n in items' ng-click='qwerty(n)' value="{{n}}">
+	<div ng-switch on='selected'>
+		<div ng-switch-when='Main'>Main
+			<div my-Directive-First>first</div>
+		</div>
+		<div ng-switch-when='Contacts'>Contacts
+			<div my-Directive-Second>second</div>
+		</div>
+		<div ng-switch-when='Delivery'>Delivery
+			<div my-Directive-Third>third</div>
+		</div>
+		<div ng-switch-default>Default</div>
+	</div>
+
+</body>
+</html>
+
