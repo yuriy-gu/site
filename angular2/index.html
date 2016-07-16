@@ -1,0 +1,64 @@
+<!DOCTYPE >
+<html ng-app="app">
+<head>
+    <title>angular</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="phones.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="btn_cnt">
+            <a href="#/"><button class="btn btn-danger">First</button></a>
+            <a href="#/second"><button class="btn btn-success">Second</button></a>  
+        </div>
+        <div ng-view></div >  
+    </div>      
+
+    <div id="tempate_cnt" style="display: none;">
+        <div id="first">
+            <input type="text" placeholder="Search in table" ng-model="val"/>
+		  
+			<div class="inlineBlock">
+                <table>
+    				<thead>
+                        <tr>
+                            <td ng-click="sortName('name')">Name</td>
+                            <td ng-click="sortName('age')">Age</td>
+                            <td>Image</td>
+                            <td>Details</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in phones | orderBy:order | filter:val">
+                            <td>{{x.name}}</td>
+                            <td>{{x.age}}</td>
+                            <td><img src="{{x.imageUrl}}" class="img"></td>
+                            <td><input type="button" value="Edit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="inlineBlock">
+                <table>
+				
+                </table>
+            </div>
+        </div>
+        
+        <div id="second" ng-model="name">
+			<table>
+                {{name}}
+            </table>
+		</div>
+    </div>
+
+  </body>
+</html>
