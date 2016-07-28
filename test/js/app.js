@@ -1,3 +1,4 @@
+//http://craft888.inf.ua/1/script/script.js
 $(document).ready(function() {
 	// SELECT (aside)
 	var region = $("#region"),
@@ -27,22 +28,26 @@ $(document).ready(function() {
 		tabActiveClass: 'nav_active',//активный таб
 		tabClass: 'nav_default'//дефолтный класс
 	});
-	// $('.tab_container').click(function() {
-	// 	if
-	// 		$('#qwerty a').removeClass('nav_default')
-	// 		console.log('asd')
-	// })
+	 $('.tabs_nav').click(function(e) {
+	 	//$(e.target).parent().removeClass('nav_default')
+	 	//$(e.target).parent().addClass('nav_default')
+	 	 $("#par1").toggleClass("class1");
+
+	 	
+	})
 
 	//slider
 	$(".slider").each(function() { // обрабатываем каждый слайдер
 		var obj = $(this);
 		$(obj).append("<div class='nav'></div>");
 		$(obj).find("li").each(function() {
-			$(obj).find(".nav").append("<span rel='" + $(this).index() + "'></span>"); // добавляем блок навигации
+			$(obj).find(".nav").append("<span rel='" + $(this).index() + "'>"+($(this).index()+1)+"</span>"); // добавляем блок навигации
 			$(this).addClass("slider" + $(this).index());
 		});
 		$(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
 	});
+
+
 	function sliderJS(obj, sl) { // slider function
 		var ul = $(sl).find("ul"); // находим блок
 		var bl = $(sl).find("li.slider" + obj); // находим любой из элементов блока
@@ -60,4 +65,5 @@ $(document).ready(function() {
 			return false;
 
 	})
+
 });
