@@ -26,12 +26,14 @@ $(document).ready(function() {
 	$('.tab_container').easytabs({
 		defaultTab: "li:first-child",//таб по умолчанию
 		tabActiveClass: 'nav_active',//активный таб
-		tabClass: 'nav_default'//дефолтный класс
+		//tabClass: 'nav_default'//дефолтный класс
 	});
+	 $('.tab_container').find("li").first().removeClass("nav_default");
 	 $('.tabs_nav').click(function(e) {
-	 	//$(e.target).parent().removeClass('nav_default')
+	 	$(e.target).parent().removeClass('nav_default')
+	 	
 	 	//$(e.target).parent().addClass('nav_default')
-	 	 $("#par1").toggleClass("class1");
+	 	
 
 	 	
 	})
