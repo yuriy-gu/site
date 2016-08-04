@@ -1,0 +1,15 @@
+.emp_wrap, .fullInfo {
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: top;
+}
+.fullInfo {
+	border: none;
+}
+table, td {
+    border: 1px solid black;
+}
+
+.bold {
+	font-weight: bold;
+}
